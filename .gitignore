@@ -1,0 +1,12 @@
+# Ignore the sensitive environment file in the backend
+backend/.env
+
+# Ignore the Python virtual environment in the backend
+backend/venv/
+
+# Ignore Node.js dependencies in the frontend
+frontend/node_modules/
+
+# Ignore other common files
+__pycache__/
+.DS_Store

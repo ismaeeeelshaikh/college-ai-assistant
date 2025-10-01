@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply p-4 rounded-lg mb-4 max-w-4xl mx-auto;
+  }
+  
+  .user-message {
+    @apply bg-blue-500 text-white ml-auto;
+  }
+  
+  .ai-message {
+    @apply bg-white border border-gray-200;
+  }
+  
+  .sidebar-item {
+    @apply p-3 rounded-lg cursor-pointer transition-colors duration-200 hover:bg-gray-100;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-primary-50 border-l-4 border-primary-500;
+  }
+}

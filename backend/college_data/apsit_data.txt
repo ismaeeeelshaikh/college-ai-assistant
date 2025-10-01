@@ -1,0 +1,20 @@
+Welcome to A.P. Shah Institute of Technology (APSIT)! Here's comprehensive information about our institution:
+
+About APSIT:
+A.P. Shah Institute of Technology (APSIT) was established in 2014 and is located in Thane West, Maharashtra. We are a private engineering institute offering undergraduate programs in various engineering disciplines. APSIT is affiliated with the University of Mumbai and approved by AICTE. Our campus is strategically located on the Mumbai-Pune Highway, making it easily accessible.
+
+Academic Programs Available:
+- Bachelor of Engineering (B.E.) in Computer Engineering - 4 years
+- Bachelor of Engineering (B.E.) in Information Technology - 4 years (180 seats)
+- Bachelor of Engineering (B.E.) in Electronics and Telecommunication Engineering - 4 years
+- Bachelor of Engineering (B.E.) in Mechanical Engineering - 4 years
+- Bachelor of Engineering (B.E.) in Civil Engineering - 4 years
+- Bachelor of Engineering (B.E.) in Electronics Engineering - 4 years
+- Bachelor of Engineering (B.E.) in CSE (AI and ML) - 4 years
+- Bachelor of Engineering (B.E.) in CSE (Data Science) - 4 years
+
+Contact Information:
+Phone: +91-22-25397659 / +91-22-25397660
+Email: info@apsit.edu.in
+Website: www.apsit.edu.in
+Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra.

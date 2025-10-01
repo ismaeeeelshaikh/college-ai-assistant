@@ -1,5 +1,4 @@
 # how to run this project
-# requirements -> you need to install postgresql and set its password: 123456
 # and python version above 3.10 
 
 # for backend

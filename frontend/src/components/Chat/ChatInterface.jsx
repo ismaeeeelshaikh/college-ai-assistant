@@ -1,11 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import ChatMessage from './ChatMessage';
 import ChatInput from './ChatInput';
-import { useChat } from '../../hooks/useChat';
 import { Loader2 } from 'lucide-react';
 
-const ChatInterface = ({ onNewChat }) => {
-  const { messages, loading, error, sendMessage } = useChat();
+const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession }) => {
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -16,46 +14,63 @@ const ChatInterface = ({ onNewChat }) => {
     scrollToBottom();
   }, [messages]);
 
+  if (!currentSession) {
+    return (
+      <div className="flex-1 flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading chat session...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex-1 flex flex-col h-full">
+      {/* Session Header */}
+      <div className="bg-white border-b border-gray-200 px-6 py-3">
+        <h2 className="text-lg font-semibold text-gray-900">{currentSession.title}</h2>
+      </div>
+      
+      {/* Messages Area */}
       <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
         {messages.length === 0 ? (
           <div className="flex items-center justify-center h-full">
             <div className="text-center">
               <h2 className="text-2xl font-semibold text-gray-900 mb-2">
-                Welcome to College AI Assistant
+                Welcome to APSIT AI Assistant
               </h2>
-              <p className="text-gray-600 mb-4">
-                Ask me anything about our college - admissions, courses, facilities, and more!
+              <p className="text-gray-600 mb-6">
+                Ask me anything about A.P. Shah Institute of Technology - admissions, courses, facilities, and more!
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
                 <button
-                  onClick={() => sendMessage('What courses does the college offer?')}
+                  onClick={() => onSendMessage('What IT courses does APSIT offer?')}
                   className="p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-left transition-colors"
                 >
-                  <div className="font-medium text-gray-900">Courses</div>
-                  <div className="text-sm text-gray-600">What courses does the college offer?</div>
+                  <div className="font-medium text-gray-900">IT Courses</div>
+                  <div className="text-sm text-gray-600">What IT courses does APSIT offer?</div>
                 </button>
                 <button
-                  onClick={() => sendMessage('How do I apply for admission?')}
+                  onClick={() => onSendMessage('How do I apply for admission to APSIT?')}
                   className="p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-left transition-colors"
                 >
                   <div className="font-medium text-gray-900">Admissions</div>
                   <div className="text-sm text-gray-600">How do I apply for admission?</div>
                 </button>
                 <button
-                  onClick={() => sendMessage('What facilities are available?')}
+                  onClick={() => onSendMessage('What facilities are available at APSIT?')}
                   className="p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-left transition-colors"
                 >
                   <div className="font-medium text-gray-900">Facilities</div>
                   <div className="text-sm text-gray-600">What facilities are available?</div>
                 </button>
                 <button
-                  onClick={() => sendMessage('What is the college contact information?')}
+                  onClick={() => onSendMessage('What is the fee structure at APSIT?')}
                   className="p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 text-left transition-colors"
                 >
-                  <div className="font-medium text-gray-900">Contact</div>
-                  <div className="text-sm text-gray-600">How can I contact the college?</div>
+                  <div className="font-medium text-gray-900">Fees</div>
+                  <div className="text-sm text-gray-600">What is the fee structure?</div>
                 </button>
               </div>
             </div>
@@ -94,7 +109,7 @@ const ChatInterface = ({ onNewChat }) => {
         )}
       </div>
       
-      <ChatInput onSendMessage={sendMessage} disabled={loading} />
+      <ChatInput onSendMessage={onSendMessage} disabled={loading} />
     </div>
   );
 };

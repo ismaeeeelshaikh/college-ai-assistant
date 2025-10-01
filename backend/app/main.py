@@ -1,27 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from contextlib import asynccontextmanager
-# Remove the init_db import
-from .routers import auth, chat
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup - remove the init_db call
-    yield
-    # Shutdown
-    pass
+from .routers import auth, chat, chat_sessions  # Add chat_sessions
 
 app = FastAPI(
     title="College AI Chatbot",
-    description="AI-powered chatbot for college information",
-    version="1.0.0",
-    lifespan=lifespan
+    description="AI-powered chatbot for college information with chat sessions",
+    version="1.0.0"
 )
 
-# CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -29,11 +18,12 @@ app.add_middleware(
 
 # Include routers
 app.include_router(auth.router)
-app.include_router(chat.router)
+app.include_router(chat.router)  # Keep old chat for compatibility
+app.include_router(chat_sessions.router)  # Add new chat sessions
 
 @app.get("/")
 async def root():
-    return {"message": "College AI Chatbot API"}
+    return {"message": "College AI Chatbot API with Chat Sessions"}
 
 @app.get("/health")
 async def health_check():

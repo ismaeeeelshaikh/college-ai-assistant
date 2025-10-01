@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
-import Layout from './components/Layout/Layout';
+import ChatSessionLayout from './components/Layout/ChatSessionLayout';  // Updated
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 
@@ -34,7 +34,7 @@ function App() {
               path="/"
               element={
                 <PrivateRoute>
-                  <Layout />
+                  <ChatSessionLayout />
                 </PrivateRoute>
               }
             />

@@ -34,9 +34,22 @@ export const authAPI = {
   login: (userData) => api.post('/auth/login', userData),
 };
 
+export const chatSessionAPI = {
+  // Chat session management
+  createSession: (title) => api.post('/chat-sessions', { title }),
+  getSessions: () => api.get('/chat-sessions'),
+  getSession: (sessionId) => api.get(`/chat-sessions/${sessionId}`),
+  updateSessionTitle: (sessionId, title) => api.put(`/chat-sessions/${sessionId}/title`, { title }),
+  deleteSession: (sessionId) => api.delete(`/chat-sessions/${sessionId}`),
+  
+  // Messages in sessions
+  sendMessage: (sessionId, question) => api.post(`/chat-sessions/${sessionId}/messages`, { question }),
+};
+
 export const chatAPI = {
   sendMessage: (message) => api.post('/chat', { question: message }),
   getHistory: () => api.get('/chat/history'),
+  clearChat: () => api.delete('/chat/clear'),
 };
 
 export default api;

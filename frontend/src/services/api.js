@@ -44,6 +44,9 @@ export const chatSessionAPI = {
   
   // Messages in sessions
   sendMessage: (sessionId, question) => api.post(`/chat-sessions/${sessionId}/messages`, { question }),
+  
+  // NEW: ChatGPT-like experience - start chat with first message
+  startChatSession: (question) => api.post('/chat-sessions/start', { question }),
 };
 
 export const chatAPI = {

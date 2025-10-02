@@ -7,11 +7,19 @@ export const useChatSessions = () => {
   const [currentMessages, setCurrentMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [isNewChat, setIsNewChat] = useState(true); // NEW: Track if this is a fresh chat
 
   const loadSessions = async () => {
     try {
       const response = await chatSessionAPI.getSessions();
       setSessions(response.data.sessions);
+      
+      // If no sessions, start with empty new chat
+      if (response.data.sessions.length === 0) {
+        setIsNewChat(true);
+        setCurrentSession(null);
+        setCurrentMessages([]);
+      }
     } catch (err) {
       console.error('Failed to load sessions:', err);
       setError('Failed to load chat sessions');
@@ -20,17 +28,27 @@ export const useChatSessions = () => {
 
   const createNewSession = async (title = 'New Chat') => {
     try {
+      // For manual "New Chat" button - create empty session
       const response = await chatSessionAPI.createSession(title);
       const newSession = response.data;
       setSessions(prev => [newSession, ...prev]);
       setCurrentSession(newSession);
       setCurrentMessages([]);
+      setIsNewChat(false);
       return newSession;
     } catch (err) {
       console.error('Failed to create session:', err);
       setError('Failed to create new chat');
       throw err;
     }
+  };
+
+  const startNewChat = () => {
+    // NEW: ChatGPT-like new chat - just clear interface, don't create session yet
+    setCurrentSession(null);
+    setCurrentMessages([]);
+    setIsNewChat(true);
+    setError(null);
   };
 
   const loadSession = async (sessionId) => {
@@ -40,6 +58,7 @@ export const useChatSessions = () => {
       const sessionDetail = response.data;
       
       setCurrentSession(sessionDetail);
+      setIsNewChat(false);
       
       // Convert messages to frontend format
       const messages = sessionDetail.messages.flatMap(msg => [
@@ -57,34 +76,57 @@ export const useChatSessions = () => {
   };
 
   const sendMessage = async (message) => {
-    if (!currentSession) {
-      throw new Error('No active chat session');
-    }
     setLoading(true);
     setError(null);
-
     // Add user message immediately
     const userMessage = { type: 'user', content: message, timestamp: new Date().toISOString() };
     setCurrentMessages(prev => [...prev, userMessage]);
 
     try {
-      const response = await chatSessionAPI.sendMessage(currentSession.id, message);
-      const aiMessage = { 
-        type: 'ai', 
-        content: response.data.answer, 
-        timestamp: response.data.timestamp 
-      };
-      setCurrentMessages(prev => [...prev, aiMessage]);
-      
-      // Update session in list (move to top)
-      setSessions(prev => {
-        const updated = prev.map(s => 
-          s.id === currentSession.id 
-            ? { ...s, updated_at: new Date().toISOString(), message_count: (s.message_count || 0) + 1 } 
-            : s
-        );
-        return updated.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-      });
+      if (isNewChat) {
+        // NEW: ChatGPT-like experience - create session with first message
+        console.log('Starting new chat session with first message:', message);
+        const response = await chatSessionAPI.startChatSession(message);
+        
+        const newSession = response.data.session;
+        const aiMessageResponse = response.data.message;
+        
+        // Update state
+        setCurrentSession(newSession);
+        setSessions(prev => [newSession, ...prev]);
+        setIsNewChat(false);
+        
+        const aiMessage = { 
+          type: 'ai', 
+          content: aiMessageResponse.answer, 
+          timestamp: aiMessageResponse.timestamp 
+        };
+        setCurrentMessages(prev => [...prev, aiMessage]);
+        
+      } else {
+        // Existing session - send message normally
+        if (!currentSession) {
+          throw new Error('No active chat session');
+        }
+        
+        const response = await chatSessionAPI.sendMessage(currentSession.id, message);
+        const aiMessage = { 
+          type: 'ai', 
+          content: response.data.answer, 
+          timestamp: response.data.timestamp 
+        };
+        setCurrentMessages(prev => [...prev, aiMessage]);
+        
+        // Update session in list (move to top)
+        setSessions(prev => {
+          const updated = prev.map(s => 
+            s.id === currentSession.id 
+              ? { ...s, updated_at: new Date().toISOString(), message_count: (s.message_count || 0) + 1 } 
+              : s
+          );
+          return updated.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        });
+      }
     } catch (err) {
       setError(err.response?.data?.detail || 'Failed to send message');
       // Remove the user message if sending failed
@@ -114,10 +156,11 @@ export const useChatSessions = () => {
       setSessions(prev => prev.filter(s => s.id !== sessionId));
       
       if (currentSession && currentSession.id === sessionId) {
-        setCurrentSession(null);
-        setCurrentMessages([]);
+        // After deleting current session, start fresh new chat
+        startNewChat();
       }
-    } catch (err) {
+    } catch (err)
+ {
       console.error('Failed to delete session:', err);
       setError('Failed to delete chat session');
     }
@@ -133,9 +176,11 @@ export const useChatSessions = () => {
     currentMessages,
     loading,
     error,
-    createNewSession,
+    isNewChat, // NEW: Expose whether this is a new unsaved chat
+    createNewSession, // OLD: Manual session creation
+    startNewChat, // NEW: ChatGPT-like new chat
     loadSession,
-    sendMessage,
+    sendMessage, // UPDATED: Handles both new and existing sessions
     updateSessionTitle,
     deleteSession,
     loadSessions

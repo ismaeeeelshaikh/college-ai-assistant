@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from './Header';
 import ChatSessionsSidebar from '../Sidebar/ChatSessionsSidebar';
 import ChatInterface from '../Chat/ChatInterface';
@@ -11,19 +11,17 @@ const ChatSessionLayout = () => {
     currentMessages,
     loading,
     error,
-    createNewSession,
+    isNewChat,
+    startNewChat, // Updated to use startNewChat instead of createNewSession
     loadSession,
     sendMessage,
     updateSessionTitle,
     deleteSession
   } = useChatSessions();
 
-  const handleNewChat = async () => {
-    try {
-      await createNewSession();
-    } catch (error) {
-      console.error('Failed to create new chat:', error);
-    }
+  const handleNewChat = () => {
+    // NEW: ChatGPT-like - just start fresh interface
+    startNewChat();
   };
 
   const handleSelectSession = async (sessionId) => {
@@ -34,12 +32,7 @@ const ChatSessionLayout = () => {
     }
   };
 
-  // Auto-create first session if none exist
-  useEffect(() => {
-    if (sessions.length === 0) {
-      createNewSession();
-    }
-  }, [sessions.length]);
+  // REMOVED: Auto-creation useEffect - no longer needed!
 
   return (
     <div className="h-screen flex flex-col">
@@ -52,6 +45,7 @@ const ChatSessionLayout = () => {
           onSelectSession={handleSelectSession}
           onUpdateTitle={updateSessionTitle}
           onDeleteSession={deleteSession}
+          isNewChat={isNewChat} // NEW: Pass isNewChat state
         />
         <ChatInterface
           messages={currentMessages}
@@ -59,6 +53,7 @@ const ChatSessionLayout = () => {
           loading={loading}
           error={error}
           currentSession={currentSession}
+          isNewChat={isNewChat} // NEW: Pass isNewChat state
         />
       </div>
     </div>

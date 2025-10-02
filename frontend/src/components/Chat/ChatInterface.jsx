@@ -3,7 +3,7 @@ import ChatMessage from './ChatMessage';
 import ChatInput from './ChatInput';
 import { Loader2 } from 'lucide-react';
 
-const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession }) => {
+const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession, isNewChat }) => {
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -14,7 +14,8 @@ const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession
     scrollToBottom();
   }, [messages]);
 
-  if (!currentSession) {
+  // FIXED: Only show loading if we're not in a new chat state
+  if (!currentSession && !isNewChat) {
     return (
       <div className="flex-1 flex items-center justify-center bg-gray-50">
         <div className="text-center">
@@ -27,10 +28,12 @@ const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession
 
   return (
     <div className="flex-1 flex flex-col h-full">
-      {/* Session Header */}
-      <div className="bg-white border-b border-gray-200 px-6 py-3">
-        <h2 className="text-lg font-semibold text-gray-900">{currentSession.title}</h2>
-      </div>
+      {/* Session Header - Only show if we have a session */}
+      {currentSession && (
+        <div className="bg-white border-b border-gray-200 px-6 py-3">
+          <h2 className="text-lg font-semibold text-gray-900">{currentSession.title}</h2>
+        </div>
+      )}
       
       {/* Messages Area */}
       <div className="flex-1 overflow-y-auto p-4 bg-gray-50">

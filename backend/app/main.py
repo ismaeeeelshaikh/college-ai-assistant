@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routers import auth, chat, chat_sessions  # Add chat_sessions
+from .routers import auth, chat, chat_sessions, password_reset
 
 app = FastAPI(
     title="College AI Chatbot",
@@ -18,8 +18,9 @@ app.add_middleware(
 
 # Include routers
 app.include_router(auth.router)
-app.include_router(chat.router)  # Keep old chat for compatibility
-app.include_router(chat_sessions.router)  # Add new chat sessions
+app.include_router(chat.router)
+app.include_router(chat_sessions.router)
+app.include_router(password_reset.router) 
 
 @app.get("/")
 async def root():

@@ -15,3 +15,6 @@ class User(Base):
     # Updated relationships
     chats = relationship("Chat", back_populates="user", cascade="all, delete-orphan")  # Keep old model
     chat_sessions = relationship("ChatSession", back_populates="user", cascade="all, delete-orphan")  # New
+
+    # Add inside class User:
+    password_reset_tokens = relationship("PasswordResetToken", back_populates="user", cascade="all, delete-orphan")

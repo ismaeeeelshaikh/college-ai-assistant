@@ -30,11 +30,25 @@ const Header = () => {
       <div className="px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-semibold text-sm">AI</span>
+            {/* UPDATED: Replace AI icon with your logo */}
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img 
+                src="/logo.png" 
+                alt="Smart Campus Connect" 
+                className="w-8 h-8 object-contain"
+                onError={(e) => {
+                  // Fallback if logo doesn't load
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center" style={{display: 'none'}}>
+                <span className="text-white font-semibold text-sm">SC</span>
+              </div>
             </div>
+            {/* UPDATED: New app name */}
             <h1 className="text-xl font-semibold text-gray-900">
-              College AI Assistant
+              Smart Campus Connect
             </h1>
           </div>
           

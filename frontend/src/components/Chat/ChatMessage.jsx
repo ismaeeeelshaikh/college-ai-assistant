@@ -10,9 +10,26 @@ const ChatMessage = ({ message }) => {
       <div className={`flex max-w-3xl ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>
         <div className={`flex-shrink-0 ${isUser ? 'ml-3' : 'mr-3'}`}>
           <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-            isUser ? 'bg-primary-600 text-white' : 'bg-gray-200 text-gray-600'
+            isUser ? 'bg-primary-600 text-white' : 'bg-gray-50 border border-gray-200'
           }`}>
-            {isUser ? <User className="h-4 w-4" /> : <Bot className="h-4 w-4" />}
+            {isUser ? (
+              <User className="h-4 w-4" />
+            ) : (
+              /* UPDATED: Use your logo for AI messages */
+              <>
+                <img 
+                  src="/logo.png" 
+                  alt="Smart Campus Connect" 
+                  className="w-6 h-6 object-contain"
+                  onError={(e) => {
+                    // Fallback if logo doesn't load
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'block';
+                  }}
+                />
+                <Bot className="h-4 w-4 text-gray-600" style={{display: 'none'}} />
+              </>
+            )}
           </div>
         </div>
         

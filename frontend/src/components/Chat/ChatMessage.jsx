@@ -1,9 +1,24 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import Linkify from 'react-linkify';
 import { User, Bot } from 'lucide-react';
 
 const ChatMessage = ({ message }) => {
   const isUser = message.type === 'user';
+  
+  // Custom component decorator for react-linkify
+  const componentDecorator = (decoratedHref, decoratedText, key) => (
+    <a
+      key={key}
+      href={decoratedHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 underline break-all"
+      style={{ color: '#2563eb', textDecoration: 'underline' }}
+    >
+      {decoratedText}
+    </a>
+  );
   
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-4`}>
@@ -15,14 +30,12 @@ const ChatMessage = ({ message }) => {
             {isUser ? (
               <User className="h-4 w-4" />
             ) : (
-              /* UPDATED: Use your logo for AI messages */
               <>
                 <img 
                   src="/logo.png" 
                   alt="Smart Campus Connect" 
                   className="w-6 h-6 object-contain"
                   onError={(e) => {
-                    // Fallback if logo doesn't load
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'block';
                   }}
@@ -39,10 +52,37 @@ const ChatMessage = ({ message }) => {
             : 'bg-white border border-gray-200 text-gray-900'
         }`}>
           {isUser ? (
-            <p className="text-sm">{message.content}</p>
+            <div className="text-sm">
+              <Linkify componentDecorator={componentDecorator}>
+                {message.content}
+              </Linkify>
+            </div>
           ) : (
             <div className="text-sm prose prose-sm max-w-none">
-              <ReactMarkdown>{message.content}</ReactMarkdown>
+              <ReactMarkdown 
+                components={{
+                  a: ({ href, children }) => (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 underline"
+                      style={{ color: '#2563eb', textDecoration: 'underline' }}
+                    >
+                      {children}
+                    </a>
+                  ),
+                  p: ({ children }) => (
+                    <p className="mb-2">
+                      <Linkify componentDecorator={componentDecorator}>
+                        {children}
+                      </Linkify>
+                    </p>
+                  )
+                }}
+              >
+                {message.content}
+              </ReactMarkdown>
             </div>
           )}
           <div className={`text-xs mt-1 ${

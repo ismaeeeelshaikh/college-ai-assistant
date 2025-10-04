@@ -1,320 +1,226 @@
-question: What are the eligibility criteria for all undergraduate courses?
-answer: To be eligible for undergraduate courses, a candidate must have passed the 10+2 examination or its equivalent with a minimum aggregate percentage of 50%. Specific subject requirements may apply for certain courses, such as Science or Commerce.
-question: What are the eligibility criteria for all postgraduate courses?
-answer: Candidates for postgraduate programs must hold a bachelor's degree in a relevant field from a recognized university with a minimum aggregate of 55%. Some courses may require a specific entrance exam score.
-question: How can I apply for admission?
-answer: You can apply online through our official admission portal. The application form is available on our website under the 'Admissions' tab. You will need to create a profile and fill in your details.
-question: What is the last date to apply for admission?
-answer: The application deadline for the upcoming academic year is [Insert Date, e.g., 30th June]. We strongly recommend submitting your application before the deadline to ensure it is processed in time.
-question: What documents are required for the application process?
-answer: You will need to upload scanned copies of your 10th-grade mark sheet, 12th-grade mark sheet, graduation degree (for PG applicants), a valid ID proof (Aadhar Card, Passport), and a recent passport-sized photograph.
-question: Is there an application fee?
-answer: Yes, there is a non-refundable application fee of [Insert Amount, e.g., ₹500]. The fee can be paid online using a credit/debit card or net banking.
-question: What is the fee structure for various courses?
-answer: The fee structure varies by course. You can find a detailed breakdown of fees, including tuition and other charges, on the specific course pages on our website or by downloading the official fee brochure.
-question: Are scholarships available for students?
-answer: Yes, our college offers several scholarships based on academic merit, performance in sports, and financial need. You can find more information about the eligibility criteria and application process on our 'Scholarships' section.
-question: Do I need to take an entrance exam for admission?
-answer: Admission to many of our courses is based on a merit list derived from qualifying entrance exam scores. For B.Tech programs, we consider scores from [Insert Exam Name, e.g., JEE Mains]. Other courses may have a college-specific entrance test.
-question: When will the entrance exam be conducted?
-answer: The dates for the entrance exams are typically announced on our website and social media channels. Please refer to the official notifications for the exact schedule.
-question: What is the syllabus for the entrance exam?
-answer: The syllabus for the entrance exam is available for download on our website under the admissions section for the respective courses.
-question: How do I check my admission status?
-answer: You can check your admission status by logging into your application portal using your registered email ID and password. Notifications will also be sent to your email.
-question: Do you provide hostel facilities for students?
-answer: Yes, we offer on-campus hostel facilities for both male and female students. The hostels are equipped with modern amenities, including Wi-Fi, a mess, and laundry services.
-question: What are the important dates for the admission process?
-answer: Key dates include the application start and end dates, entrance exam dates, and the date for the commencement of classes. All these dates are listed on the admissions section of our website.
-question: Whom should I contact for more information about admissions?
-answer: For any admission-related queries, you can contact our help desk at [Insert Phone Number] or email us at [Insert Email Address]. Our team is available to assist you.
-question: What is the minimum percentage required for admission?
-answer: The minimum percentage required is generally 50% for undergraduate programs and 55% for postgraduate programs. However, this can vary based on the specific course and the number of applications received.
-question: Can I apply for multiple courses at once?
-answer: Yes, you can apply for multiple courses by submitting a separate application for each one. Please note that each application will require a separate application fee.
-question: How will I know if I have been selected for admission?
-answer: Shortlisted candidates will be notified via email and an official list will be published on the college website. You will then be invited for the counseling and document verification process.
-question: What is the refund policy for fees?
-answer: The refund policy is in accordance with UGC guidelines. A full refund of fees may be possible if a student withdraws their admission within a specified period. The detailed policy is available on our website.
-question: Do you have any placement assistance for students?
-answer: Yes, our dedicated placement cell works to connect students with top companies. We conduct regular workshops, training sessions, and campus recruitment drives to help students secure jobs after graduation.
-question: What is the name of the institute and who manages it?
-answer: The institute is A. P. Shah Institute of Technology (APSIT). It is managed by the Parshvanath Charitable Trust (PCT).
-question: What is the DTE code for the institute?
-answer: The DTE code for A. P. Shah Institute of Technology is 3475.
-question: Is A. P. Shah Institute of Technology a minority institute?
-answer: Yes, it is a Religious Jain Minority institute.
-question: What are the engineering branches available?
-answer: The institute offers the following branches: Civil Engineering, Computer Engineering, CSE AI and ML, CSE Data Science, Information Technology, and Mechanical Engineering.
-question: Which branches are NBA accredited?
-answer: Civil Engineering, Computer Engineering, Information Technology, and Mechanical Engineering are all NBA accredited.
-question: Where is the institute located?
-answer: The institute is located at Survey No. 12, 13, Opp. Hypercity Mall, Kusarvadevall, Ghedbunder Road, Thane (W), 400610.
-question: What is the contact number and website of the college?
-answer: You can contact the college at Tel.: 7738305400/022-25973737/38. The website is www.apsit.edu.in.
-question: What is the vision of APSIT?
-answer: APSIT's vision is to be a premier institute that produces globally competent engineering professionals to contribute to the socio-economic growth of India.
-question: What is the mission of APSIT?
-answer: The mission of the institute is to provide a collaborative and conducive environment to meet current and future engineering challenges through project-based and value-added education with the help of trained faculty.
-question: Has the college won any awards?
-answer: Yes, APSIT has won the 'Best Engineering College Award' of ISTE for the year 2022 and the 'Academic Excellence Award' by the Institution of Engineers, India for the year 2023. It was also ranked No.1 in the Mumbai Region and All India Rank 5 in the Times of India Engineering Survey 2022.
-question: What are the achievements of the principal, Dr. Uttam Kolekar?
-answer: The principal, Dr. Uttam Kolekar, was awarded the 'Principal Excellence Award 2024' and the 'Best Outreach & Brand Promotion Award 2024' for his leadership in the AICTE Virtual Internship Program.
-question: Has the college won any awards for its AICTE Virtual Internship Program?
-answer: Yes, APSIT was recognized as a 'Star Performing Engineering Institute of West Region' in the AICTE Virtual Internship Program for the years 2023 and 2024. The World Book of Records London also acknowledged APSIT's contribution in completing 5 lakh internships through this program.
-question: What academic initiatives does the college have?
-answer: The college offers several academic initiatives, including a Moodle e-learning platform, Project-Based Learning, the AICTE Virtual Internship Program, and the NPTEL program from IITs. They also provide free training for GATE/GRE, pre-placement, and foreign languages.
-question: What are the facilities and infrastructure like at APSIT?
-answer: The campus has all classrooms with AC and smart teaching aids. There are 33 air-conditioned computer labs and more than 60 labs in total. It is a Wi-Fi enabled campus with a library that has over 22,600 technical books and e-books. Other facilities include an AC seminar hall, a hygienic canteen, and an ATM.
-question: What industrial collaborations does the college have?
-answer: The college has strong industrial collaborations with companies like Cisco, Juniper Networks, Oracle, Red Hat, Virtusa, and Palo Alto Cyber Security Academy. It also has an AI/Deep Learning Lab powered by NVIDIA.
-question: What are the student technical clubs at APSIT?
-answer: The college has various student technical clubs including a Coder's Club, AIML Club, Cyber Security Club, DevOps Club, Google Developer Student Club, and a Blockchain Club.
-question: Which companies recruit from APSIT?
-answer: Our recruiters include Deloitte, Virtusa, Infosys, Capgemini, LTIMindtree, Tech Mahindra, TATA Consultancy Services, and many more.
-question: Can you tell me about any student achievements?
-answer: A team from APSIT secured victory in the Smart India Hackathon 2024. Additionally, Civil Engineering students received scholarships worth Rs. 10.6 lakhs from CREDAI Maharashtra.
-question: How did students perform in GATE 2025?
-answer: In GATE 2025, Omkar Mulik achieved AIR 15 in Mechanical Engineering, Anwesha Pani achieved AIR 17 in Computer Engineering, and Gauri Valanju achieved AIR 381 in Computer Engineering.
-question: What is the mission of the Parshvanath Charitable Trust (PCT)?
-answer: PCT is committed to providing world-class facilities, infrastructure, technology, and an appropriate environment for students. The trust also aspires to develop APSIT into a globally recognized center for technological training and research.
-question: What are the specific student demographics for the AICTE-EduSkills Virtual Internship Program?
-answer: For the AICTE-EduSkills Virtual Internship program in AY 2024-25, 3200 students were shortlisted. Out of these, 68% were male students and 32% were female students.
-question: What support is available for student entrepreneurs?
-answer: Harsh Tambade, a CSE-DS student, secured pre-incubation support from MU Ideas Foundation under Mumbai University for 12 months. The institute also has an Incubation Center for Developing Entrepreneurs and Startups.
-question: How many computers are available on campus and is there Wi-Fi?
-answer: The campus has over 1000 computers with high-speed internet. The entire campus is also Wi-Fi enabled.
-question: Can you list some of the student technical clubs at APSIT?
-answer: The student technical clubs at APSIT include the AIML Club, Coder's Club, Cyber Security Club, DevOps Club, Modified Auto Club, Google Developer Student Club, Blockchain Club, and Data Science & Analytics Club.
-question: What facilities are available in the college library?
-answer: The college library has an extensive collection of over 22,600 technical books and e-books. Students can also access the Pearson & Tata McGraw-Hill Online Library.
-question: Which companies have industrial collaborations with the college?
-answer: APSIT has collaborations with Cisco Networking Academy, Juniper Networks, Oracle, Red Hat, Virtusa, Palo Alto, Blueprism, and NVIDIA.
-question: Who were the top GATE 2025 achievers?
-answer: The top GATE 2025 achievers were Omkar Mulik (AIR 15 in Mechanical), Anwesha Pani (AIR 17 in Computer), and Gauri Valanju (AIR 381 in Computer). Tanmay Sule also achieved AIR 2 in Computer in the year 2020.
-question: What is the purpose of the Institution's Innovation Council and Entrepreneurship Development Cell?
-answer: The Institution's Innovation Council is an initiative of the Ministry of Education. The college also has an Entrepreneurship Development Cell & Incubation Center to support students.
-question: What kind of training is offered for students?
-answer: The college provides free training for GATE, GRE, pre-placement, and foreign languages. Students can also participate in the IIT Bombay Spoken Tutorial Program and NPTEL.
-question: What is the student intake capacity for each engineering branch?
-answer: The student intake capacity is as follows: Civil Engineering has 30 seats, Computer Engineering has 180 seats, CSE AI and ML has 180 seats, CSE Data Science has 120 seats, Information Technology has 180 seats, and Mechanical Engineering has 30 seats.
-question: What are the details of the AICTE-EduSkills Virtual Internship Program for AY 2024-25?
-answer: The internship program for AY 2024-25 requires a time commitment of 700 hours and a course duration of 10 weeks per cohort. It covers 13 different internship domains and 3059 students completed the program with a 96% completion rate.
-question: Who founded the Parshvanath Charitable Trust (PCT)?
-answer: The Parshvanath Charitable Trust was established in November, 1993, under the leadership of Late Shri Ashokbhai Shah.
-question: What is the name of the college principal and what awards has he received?
-answer: The college principal is Dr. Uttam Kolekar. He has been awarded the 'Principal Excellence Award 2024' and 'Best Outreach & Brand Promotion Award 2024'.
-question: What ranking did APSIT receive in the Times of India Engineering Survey 2022?
-answer: In the Times of India Engineering Survey 2022, APSIT was ranked No. 1 in the Mumbai Region and All India Rank 5 in the Emerging Engineering Colleges category.
-question: What kind of training and resources are provided for students?
-answer: The college offers free training for GATE, GRE, pre-placement, and foreign languages. Students also have access to the IIT Bombay Spoken Tutorial Program and a Pearson & Tata McGraw-Hill Online Library.
-question: Can you name some of the GATE achievers from 2025 and their ranks?
-answer: The GATE 2025 achievers include Omkar Mulik (AIR 15 in Mechanical), Anwesha Pani (AIR 17 in Computer), and Saurav Gupta (AIR 4646 in Computer).
-question: What kind of labs and classrooms are available?
-answer: The campus has all classrooms with AC and smart teaching aids. There are 33 air-conditioned computer labs and more than 60 labs in total.
-question: Which companies are involved in the industrial collaborations for specific labs and technologies?
-answer: The institute has collaborations with Cisco Networking Academy, Juniper Networks Cloud & Automation Academy, and Palo Alto Cyber Security Academy. The AI/Deep Learning Lab is powered by NVIDIA.
-question: What kind of non-academic facilities are available on campus?
-answer: The campus features a spacious and hygienic canteen and cafeteria, a nationalized bank with an ATM facility, spacious parking, indoor sports facilities, and a stationery store.
-question: What award did the ISHRAE APSIT Student Chapter receive?
-answer: The ISHRAE APSIT Student Chapter achieved the 'Best Student Chapter' award at the ISHRAE Thane Chapter Installation Ceremony.
-question: What award did APSIT receive from ISTE?
-answer: APSIT bagged the 'Best Engineering College Award' of ISTE for the year 2022.
-question: What distinction did AICTE present to APSIT for its virtual internship program?
-answer: APSIT was recognized as a 'Star Performing Engineering Institute of West Region' in the AICTE Virtual Internship Program for the years 2023 & 2024.
-question: Which organization provided scholarships to Civil Engineering students and for what amount?
-answer: Civil Engineering students received scholarships worth Rs. 10.6 lakhs from CREDAI Maharashtra, Chamber of Housing Industry.
-question: What was APSIT acknowledged for by the World Book of Records London?
-answer: APSIT was acknowledged for its contribution in completing 5 Lakhs internships through the AICTE-Eduskills Virtual Internship Program.
-question: What are the details of the AICTE-EduSkills Virtual Internship completion?
-answer: From July 2024 to January 2025, 3059 students completed the AICTE Virtual Internships, which represents a 96% completion rate.
-question: Can you name some of the student clubs at the college?
-answer: The student technical clubs at APSIT include the Coder's Club, AIML Club, Cyber Security Club, DevOps Club, Modified Auto Club, Google Developer Student Club, Blockchain Club, and the Green Club.
-question: What specific online library resources are available to students?
-answer: The college provides access to the Pearson and Tata McGraw-Hill Online Library.
-question: Which companies are part of the Industry Center of Excellence?
-answer: The Industry Center of Excellence includes collaborations with Google for Developers, Virtusa, MICROCHIP, Palo Alto, Juniper, Fortinet, Zscaler, Oracle, Ui Path, Bentley, and Celonis.
-question: What non-academic facilities are available on campus?
-answer: The campus features a spacious and hygienic canteen, nationalized banks with an ATM facility, parking, online CCTV surveillance, and recreational facilities.
-question: What are some of the annual events or festivals at APSIT?
-answer: The college holds an Annual Cultural Festival called Ojus 2025.
-question: What is the purpose of the Entrepreneurship Development Cell?
-answer: The college has an Entrepreneurship Development Cell & Incubation Center.
-question: What are the two channels for admission to APSIT?
-answer: APSIT offers admissions through two channels: 10% are through institute-level admissions and 90% are through the Centralized Admission Process (CAP) conducted by the Government of Maharashtra.
-question: What is the process for institute-level admissions?
-answer: To apply, a hardcopy application form must be collected from the college. It must be submitted in person with all mandatory documents by the date of the final CAP Round allotment. A merit list will be published on the website, and selected students must be present on the admission day with original documents and fees.
-question: Is an entrance exam mandatory for admission?
-answer: Yes, an entrance exam is mandatory. Candidates must have appeared for either MHT-CET or JEE of the current year.
-question: What are the eligibility criteria for First Year Engineering?
-answer: A candidate must be an Indian National, have passed HSC or its equivalent with Physics and Mathematics as compulsory subjects, and have obtained at least 45% marks (40% for Backward Class and PwD candidates).
-question: What are the eligibility criteria for Direct Second Year Engineering (Lateral Entry)?
-answer: Candidates must have passed a Diploma in Engineering and Technology or a B.Sc. degree from a UGC-recognized university. They must have scored at least 45% marks in their diploma or degree (40% for Backward Class and PwD).
-question: What documents are required for admission?
-answer: Candidates need to submit a xerox copy of SC/FC Registration, SSC Marksheet, HSC Marksheet, Migration certificate, MHT-CET/ JEE Score card, Leaving Certificate, Domicile/ Birth Certificate and Aadhar Card.
-question: What is the fee for the Academic Year 2025-26?
-answer: The admission fee for the academic year 2025-26 is Rs. 138,999/-, which includes the fee approved by the FRA plus University and Exam fees.
-question: Will the fees increase in subsequent years?
-answer: No, the fees paid during the first year of admission will remain the same for the entire four-year duration of the course.
-question: Is it mandatory to register for CAP to apply for institute-level admission?
-answer: Yes, it is mandatory to register for CAP through the Scrutiny Centers. Students must obtain the DTE registration number when submitting the application form.
-question: What is the eligibility criteria for Jain Minority candidates?
-answer: A candidate must be a Domicile of Maharashtra and belong to a Jain Religious Minority Community. This minority status must be mentioned on their School Leaving Certificate.
-question: Does admission through the Institute quota require a donation?
-answer: No, the college does not accept any donations. Only the approved fees are to be paid by the students.
-question: What is the median salary package offered during placements?
-answer: The median salary package offered to B.E./B.Tech graduates is approximately INR 4,28,000.
-question: Can you provide some examples of high salary packages at APSIT?
-answer: Yes, some examples are Mr. Preet Gandhi (StreamSets) with 25 LPA and Ms. Rakshita Tantry (Goldman Sachs) with 20 LPA.
-question: What is the role of the Training and Placement Cell?
-answer: The Training and Placement Cell works to reduce the gap between the Campus and Corporate. It facilitates contacts between companies and graduates and helps eligible students get placed in top organizations. The TPO provides aptitude and soft skill training.
-question: What are some of the companies that recruit from APSIT?
-answer: The college has a good placement record with many students getting placed in top companies like TCS, Infosys, Hexaware, and Wipro. Other companies that have visited include TTML, Philips, and Accenture.
-question: What is the purpose of the Juniper Networks Cloud and Automation Academy (JNCAA)?
-answer: The JNCAA provides students with the opportunity to develop knowledge in networking industry trends, with a focus on cloud solutions, network automation, and DevOps.
-question: What does the Virtusa Centre of Excellence focus on?
-answer: The Virtusa Centre of Excellence at APSIT is focused on Java Full Stack Development.
-question: What is the purpose of the iOS Lab at APSIT?
-answer: The iOS Lab is a cutting-edge facility established to equip graduates in various disciplines that drive the digital world, such as mobile computing and cross-platform application development.
-question: What software does APSIT provide through the Bentley Institute Academic Program?
-answer: Through the Bentley Institute Academic Program, APSIT provides the use of over 50 different Bentley software products including STAAD.Pro, MicroStation, and WaterGEMS.
-question: What courses are offered at the Autodesk Training Center?
-answer: The Autodesk Training Center offers courses in 3D Modeling and Animation, CAD/CAM, CAE, Prototyping and Simulation, and Building Information Modeling (BIM).
-question: What does the Oracle Academy collaboration offer?
-answer: The Oracle Academy is a collaborative effort to impart skills leading to global certifications in domains like JAVA Programming, Database Design & Programming, and PL/SQL.
-question: What training is provided under the Blue Prism Academy?
-answer: The Blue Prism Academy at APSIT delivers authorized Blue Prism courses, and students can get certified through online certification opportunities and hands-on labs.
-question: How many courses are offered at the institute?
-answer: The institute offers a variety of B.E. / B.Tech courses. The available streams include Engineering, in Full Time mode. There are 780 seats available for the current academic year.
-question: What are the specializations available in the B.E. / B.Tech programs?
-answer: The institute has specializations in Electronics Engineering, Civil Engineering, Computer Science Engineering, Artificial Intelligence & Machine Learning, Information Technology, and Mechanical Engineering.
-question: What is the medium of instruction at the college?
-answer: The medium of instruction at the college is English.
-question: Are there opportunities for internships and projects?
-answer: Yes, internships and industry projects are offered every semester. Students can also work with faculty on research projects.
-question: How many application forms can a student fill for various courses?
-answer: A candidate can fill only one application for all interested courses.
-question: What is the process for paying admission fees?
-answer: Admission fees can be paid via Demand Draft (DD) in favor of 'A P Shah Institute of Technology'. Online payment is also an option using a Debit Card, Credit Card, Net-banking, UPI, or Google-Pay, provided the daily transaction limit is sufficient.
-question: What is the final step in the admission process for CAP candidates?
-answer: The final step is to submit original certificates along with the admission file to the office and get a DTE Confirmation letter.
-question: When do admissions for the UG Engineering program typically start?
-answer: Admissions generally begin after the results of the MHT-CET Exam and continue until the cutoff date given by CET CELL.
-question: What specific documents are required for various categories of candidates?
-answer: Documents like Caste Certificate, Caste Validity, and Non-Creamy Layer Certificate are required for SC/ST, OBC, and SBC/DT/NT candidates. A Religious Minority Letter from a Jain Derasar and a notarized affidavit are required for Jain Minority candidates.
-question: What are some of the value addition programs offered?
-answer: The college offers online quizzes and training on various value addition programs, such as Java, Business Analytics, Full Stack Development, Machine Learning, and Cloud Computing.
-question: Are all courses at APSIT NBA accredited?
-answer: No, not all courses are NBA accredited. However, the brochure for first year engineering admissions claims that all courses are NBA accredited.
-question: What is the contact information for exam or transcript-related queries?
-answer: For exam or transcripts-related queries, you can contact exam@apsit.edu.in or reception@apsit.edu.in.
-question: When does admission start for the UG Engineering program?
-answer: Admissions generally begin after the result of the MHT-CET Exam and continue until the cutoff date of admissions given by CET CELL.
-question: What is the Eligibility Criteria for Admission?
-answer: Candidate should be Domicile of Maharashtra and have passed HSC or its equivalent examination with Physics and Mathematics as compulsory subjects along with one of the Chemistry or Biotechnology or Biology or Technical or Vocational Subjects obtaining at least 45% marks (at least 40% marks, in case of Backward class categories and persons with Disability candidates belonging to Maharashtra State only) in the above subjects taken together; and obtained score in CET conducted by the Competent Authority.
-question: Is an Entrance exam mandatory?
-answer: Yes, an Entrance Exam is mandatory. Candidate must have given the MHT-CET or JEE Exam of the current year.
-question: Can students from other states of India take Admission In APSIT?
-answer: Yes. Depending on the MHT– CET 2025/ JEE (Main) score of the current year and passing the XIIth examination in English with minimum 45% marks in PCM, a candidate can take admission. Registration and Enrollment on the web portal of the State Common Entrance Test Cell, Govt. of Maharashtra is MANDATORY.
-question: What documents are required along with the Institute Level/ ACAP Vacancy Application form?
-answer: A candidate needs to submit a xerox copy of SC/FC Registration, SSC Marksheet, HSC Marksheet, Migration, MHT-CET/ JEE Score card, Leaving Certificate, Domicile/ Birth Certificate and Aadhar Card. The form needs to be submitted in hardcopy before the last date scheduled by the Institute.
-question: What Is the Admission Process for Institute Level Quota At APSIT?
-answer: The candidate shall REGISTER ONLINE on the Institute website for receiving updates of institute level admission. Registration and Enrollment on the web portal of the State Common Entrance Test Cell, Govt. of Maharashtra is also MANDATORY.
-question: How many application forms can one fill while applying to various Courses?
-answer: Only one application for all interested courses.
-question: What is the Medium of Instruction?
-answer: The Medium of Instruction is English.
-question: Do the candidate need to submit all the Original Documents at the time of Admission?
-answer: Yes, the candidate needs to submit all the Original Documents required at the time of Admission.
-question: What are the Criteria for Jain Minority candidate admission at APSIT?
-answer: The candidate must be Domiciled in the Maharashtra state. The candidate shall belong to a Jain Religious Minority Community in the Maharashtra state and the minority status shall be mentioned on their School leaving certificate.
-question: Does admission through Institute quota require a donation?
-answer: No. The college does not accept any donations, only approved fees are to be paid by the students.
-question: What is the Admission Fee for Academic Year 2025-26?
-answer: The Admission Fee for the academic Year 2025-26 is Rs. 138,999/- which includes Rs.136,000/- approved by the FRA plus University and Exam fees.
-question: Will there be any Increase in the Fees in Subsequent Years?
-answer: No. The Fees paid during First Year Admission will be the same for the entire duration of the course, which is 4 years.
-question: Is there any difference in fee structure for candidates taking admission through INSTITUTE QUOTA and CAP?
-answer: The fee structure remains the same for the students taking admission through CAP or Institute Quota. However, only students admitted through CAP are eligible for scholarship schemes applicable to SC, ST, OBC, SEBC, SBC, DT, NT and EBC offered by the Government of Maharashtra.
-question: What is the Fee Structure for students belonging to SC/ST/SBC/DT/NT/OBC/SEBC category with scholarships?
-answer: Development fees are to be paid by students for all categories except SC and ST. No Tuition fees are required to be paid by SC / ST /OBC FEMALE / SEBC FEMALE / NT / DT / SBC/ VJ / EBC FEMALE candidates. 50% of tuition fees shall be paid by OBC MALE / SEBC MALE / EBC MALE candidates.
-question: Does the candidate need to pay the full fee at the time of Admission?
-answer: Yes, the candidate needs to pay the full fee at the time of Admission.
-question: What are the modes of Payment?
-answer: Payment needs to be made by UPI, Debit Card, Credit Card, Netbanking, or Demand Draft.
-question: Why do the students need to fill the Scholarship Form?
-answer: The student needs to fill the scholarship form if they want to avail the fee benefit from the Government of Maharashtra. If the candidate fails to fill the form in time, they have to pay the full fee to the Institute.
-question: Where is the Institute Level Merit list and Schedule displayed on the Website?
-answer: The Institute Level Merit list and Schedule are displayed on the front page of our Website as well as on the Admission Notification Page.
-question: Where do the Students have to pay the Fees of the Institute?
-answer: Students have to pay the Fee on the APSIT PAYMENT PORTAL.
-question: Who approves the fees of the Institute?
-answer: The fee of the Institute is approved by the Fee Regulating Authority as per MAHARASHTRA ACT No. XXVIII of 2015.
-question: How can students make payments for fees and exams?
-answer: All payments must be made by students through the Online Payment System only. No cash payment is accepted.
-question: What are the accepted modes of payment for the online system?
-answer: The accepted modes are Demand Draft (DD), UPI, Debit Card, Credit Card, and Net Banking (HDFC Bank is not available).
-question: Where can I find the online payment system?
-answer: The online payment system is available on the institute's website under the 'PAY FEES' tab.
-question: What should a Demand Draft be made in favor of?
-answer: The Demand Draft should be made in favor of 'A P SHAH INSTITUTE OF TECHNOLOGY'.
-question: What fees are included in the overall fee structure?
-answer: The fee includes Tuition Fee, Development Fee, and various University fees like Enrollment Fees, Gymkhana Fees, Cultural Fee, and more.
-question: What is the University Fee amount?
-answer: The University Fee is either Rs. 406/- or Rs. 706/-.
-question: Is the fee structure applicable for all students?
-answer: The fee structure is for the Academic Year 2025-26 and includes Tuition Fee, Development Fee, and University fees.
-question: What is the fee for Open and Minority students from the Maharashtra Board?
-answer: The fee for Open and Minority students from the Maharashtra Board is 136406.
-question: What is the fee for Open and Minority students from a board other than the Maharashtra Board?
-answer: The fee for Open and Minority students from other boards is 136706.
-question: What documents are required for OBC (Male) candidates for a fee benefit?
-answer: OBC (Male) candidates need a Caste Certificate, Caste Validity, Non-Creamy Layer, and an Income Certificate for a fee benefit.
-question: What is the fee for OBC (Female) candidates from the Maharashtra Board?
-answer: The fee for OBC (Female) candidates from the Maharashtra Board is 17629.
-question: What documents are required for SC/ST students for a fee benefit?
-answer: SC/ST students need a Caste Certificate and Caste Validity for a fee benefit.
-question: What is the fee for SC/ST students from a board other than the Maharashtra Board?
-answer: The fee for SC/ST students from other boards is 706.
-question: What is the fee for students under the TFWS category from the Maharashtra Board?
-answer: The fee for TFWS students from the Maharashtra Board is 17629.
-question: What documents are required for students under the TFWS category?
-answer: Students under the TFWS category need to submit an Income Certificate for a fee benefit.
-question: What is the fee for NT/DT/SBC students from the Maharashtra Board?
-answer: The fee for NT/DT/SBC students from the Maharashtra Board is 17629.
-question: What documents are needed for Open and Minority male students with an income below 8 lakhs?
-answer: They need an Income Certificate below 8 lakhs for a fee benefit.
-question: What is the fee for Open and Minority female students with an income below 8 lakhs and from a board other than the Maharashtra Board?
-answer: The fee is 17929 for Open and Minority female students from other boards with an income below 8 lakhs.
-question: What is the fee for NT/DT/SBC students from a board other than the Maharashtra Board?
-answer: The fee for NT/DT/SBC students from other boards is 17929.
-question: What is the fee for SC/ST students from the Maharashtra Board?
-answer: The fee for SC/ST students from the Maharashtra Board is 406.
-question: What is the fee for Open and Minority candidates for Direct Second Year Engineering (DSE) admission?
-answer: The fee for Open and Minority candidates through CAP for DSE admission is 136706.
-question: What is the fee for OBC (Male) candidates for DSE admission?
-answer: The fee for OBC (Male) candidates through CAP for DSE admission is 77318.
-question: What documents are required for OBC (Male) candidates to get a fee benefit for DSE admission?
-answer: OBC (Male) candidates need a Caste Certificate, Caste Validity, Non-Creamy Layer, and an Income Certificate below 8 lakhs.
-question: What is the fee for OBC (Female) candidates for DSE admission?
-answer: The fee for OBC (Female) candidates through CAP for DSE admission is 17929.
-question: What documents are required for SC/ST candidates for a fee benefit for DSE admission?
-answer: SC/ST candidates need a Caste Certificate and Caste Validity for a fee benefit.
-question: What is the fee for SC/ST candidates for DSE admission?
-answer: The fee for SC/ST candidates through CAP for DSE admission is 706.
-question: What is the fee for NT/DT/SBC candidates for DSE admission?
-answer: The fee for NT/DT/SBC candidates through CAP for DSE admission is 17929.
-question: What documents are required for Open & Minority (Male) candidates with income below 8 lakhs for DSE admission?
-answer: Open & Minority (Male) candidates with an income below 8 lakhs need to provide an Income Certificate below 8 lakhs for a fee benefit. The fee is 77318.
-question: What is the fee for Open & Minority (Female) candidates with income below 8 lakhs for DSE admission?
-answer: The fee for Open & Minority (Female) candidates with an income below 8 lakhs for DSE admission is 17929.
-question: What are the general rules for admission, cancellation, and fees?
-answer: The rules for eligibility, admission, cancellation, and refunds are based on norms laid down by the Directorate of Technical Education, Government of Maharashtra, and the University of Mumbai. Fees are approved by the Fee Regulating Authority (FRA).
-question: What are the eligibility criteria for a First Year Engineering degree for a candidate with an HSC qualification?
-answer: The candidate must be an Indian National and have passed the HSC or equivalent examination with Physics and Mathematics as compulsory subjects, along with one of Chemistry, Biotechnology, Biology, or a Technical/Vocational Subject. They must obtain at least 45% marks in those subjects together (40% for Backward class and PwD candidates from Maharashtra only) and have a valid score in CET.
-question: What are the alternate eligibility criteria for a First Year Engineering degree?
-answer: A candidate can also be eligible if they have passed a Diploma in Engineering with at least 45% marks (40% for Backward class and PwD candidates) or if they have passed a B.Sc. Degree with at least 50% marks (45% for Backward class and PwD candidates).
-question: What are the eligibility criteria for Direct Second Year (Lateral Entry)?
-answer: The candidate should be an Indian National and have passed a Diploma in Engineering with at least 45% marks (40% for Backward class and PwD candidates). Alternatively, a candidate with a B.Sc. Degree and at least 45% marks (40% for Backward class and PwD candidates) is eligible, provided they passed HSC with Mathematics as a subject.
-question: Are there any special requirements for B.Sc. degree holders admitted to Direct Second Year?
-answer: Yes, students from this category must clear the subjects of Engineering Graphics/Engineering Drawing and Engineering Mechanics from the first year Engineering Program along with their second-year subjects.
+APSIT ADMISSIONS AND GENERAL INFORMATION 2025-26
+
+=== BASIC INFORMATION ===
+
+Institute Name: A.P. Shah Institute of Technology (APSIT)
+DTE Code: 3475
+Management: Parshvanath Charitable Trust (PCT)
+Institute Type: Religious Jain Minority Institute
+Location: Survey No. 12, 13, Opp. Hypercity Mall, Kusarvadevall, Ghedbunder Road, Thane (W), 400610
+Contact: Tel.: 7738305400 / 022-25973737/38
+Website: www.apsit.edu.in
+Email: exam@apsit.edu.in, reception@apsit.edu.in
+
+Vision: To be a premier institute that produces globally competent engineering professionals to contribute to the socio-economic growth of India.
+
+Mission: To provide a collaborative and conducive environment to meet current and future engineering challenges through project-based and value-added education with the help of trained faculty.
+
+=== COURSES AND SEAT INTAKE ===
+
+Total Seats: 780
+Medium of Instruction: English
+Course Duration: 4 years (B.E./B.Tech)
+
+Available Branches with Seat Intake:
+- Civil Engineering: 30 seats (NBA Accredited)
+- Computer Engineering: 180 seats (NBA Accredited)
+- CSE AI and ML: 180 seats
+- CSE Data Science: 120 seats
+- Information Technology: 180 seats (NBA Accredited)
+- Mechanical Engineering: 30 seats (NBA Accredited)
+
+=== ADMISSION PROCESS ===
+
+APSIT offers admissions through two channels:
+- 10% through Institute-level admissions
+- 90% through Centralized Admission Process (CAP) by Government of Maharashtra
+
+Admission Timeline:
+Admissions generally begin after MHT-CET exam results and continue until the cutoff date given by CET CELL.
+
+=== ELIGIBILITY CRITERIA ===
+
+First Year Engineering (Direct Admission):
+- Indian National
+- Passed HSC or equivalent with Physics and Mathematics compulsory
+- One of Chemistry/Biotechnology/Biology/Technical/Vocational subjects
+- Minimum 45% marks in above subjects combined (40% for Backward class/PwD candidates from Maharashtra)
+- Valid MHT-CET or JEE Main score
+
+Direct Second Year (Lateral Entry):
+- Indian National
+- Diploma in Engineering with minimum 45% marks (40% for Backward class/PwD)
+- OR B.Sc. degree with minimum 45% marks (40% for Backward class/PwD) and HSC with Mathematics
+
+Out-of-State Students:
+- MHT-CET 2025/JEE Main score of current year
+- XII examination in English with minimum 45% marks in PCM
+- Registration on Maharashtra CET Cell portal is MANDATORY
+
+=== ENTRANCE EXAMINATIONS ===
+
+Mandatory Entrance Exams: MHT-CET or JEE Main (current year)
+Registration: Maharashtra CET Cell portal registration is mandatory for all candidates
+
+=== REQUIRED DOCUMENTS ===
+
+For Application:
+- SC/FC Registration (if applicable)
+- SSC Marksheet
+- HSC Marksheet
+- Migration Certificate
+- MHT-CET/JEE Score Card
+- Leaving Certificate
+- Domicile/Birth Certificate
+- Aadhar Card
+
+Additional Documents by Category:
+- SC/ST: Caste Certificate, Caste Validity
+- OBC: Caste Certificate, Caste Validity, Non-Creamy Layer Certificate, Income Certificate
+- Jain Minority: Religious Minority Letter from Jain Derasar, Notarized Affidavit
+- TFWS/EBC: Income Certificate
+
+=== FEE STRUCTURE 2025-26 ===
+
+General Admission Fee: Rs. 138,999/- (includes Rs. 136,000 FRA approved + University fees)
+
+Category-wise Fee Structure:
+
+Open/Minority Students (Maharashtra Board): Rs. 136,406/-
+Open/Minority Students (Other Boards): Rs. 136,706/-
+
+Fee Benefits Available:
+- SC/ST (Maharashtra): Rs. 406/-
+- SC/ST (Other Boards): Rs. 706/-
+- OBC Female: Rs. 17,629/-
+- OBC Male: 50% tuition fee waiver
+- TFWS Category: Rs. 17,629/-
+- NT/DT/SBC: Rs. 17,629/-
+
+Direct Second Year (Lateral Entry):
+- Open/Minority: Rs. 136,706/-
+- SC/ST: Rs. 706/-
+- OBC Male: Rs. 77,318/-
+- OBC Female: Rs. 17,929/-
+
+Fee Payment:
+- Full fee to be paid at admission time
+- Payment modes: UPI, Debit Card, Credit Card, Net Banking, Demand Draft
+- DD in favor of: "A P SHAH INSTITUTE OF TECHNOLOGY"
+- Fees remain same for entire 4-year duration
+
+=== JAIN MINORITY CRITERIA ===
+
+- Must be domiciled in Maharashtra
+- Belong to Jain Religious Minority Community
+- Minority status mentioned on School Leaving Certificate
+
+=== APPLICATION PROCESS ===
+
+Institute Level Admission:
+1. Register online on www.apsit.edu.in
+2. Mandatory CAP registration through Scrutiny Centers
+3. Collect hardcopy application form from college
+4. Submit form with documents before deadline
+5. Merit list published on website
+6. Attend admission day with original documents and fees
+
+CAP Admission:
+1. Register on Maharashtra CET Cell portal
+2. Fill option form selecting APSIT courses
+3. Participate in CAP rounds
+4. Report to allotted college if selected
+
+=== SCHOLARSHIPS AND FEE BENEFITS ===
+
+Government of Maharashtra scholarships available for CAP students:
+- SC, ST, OBC, SEBC, SBC, DT, NT, EBC categories eligible
+- Institute quota students not eligible for government scholarships
+- No donations accepted - only approved fees
+
+=== IMPORTANT POLICIES ===
+
+Refund Policy: As per UGC guidelines and Maharashtra Act No. XXVIII of 2015
+No Cash Payments: All payments through online system only
+Merit-based Admission: No donations accepted
+Document Verification: Original documents required at admission
+
+=== CONTACT FOR ADMISSIONS ===
+
+Phone: 7738305400 / 022-25973737/38
+Email: admission@apsit.edu.in
+Visit: College campus for hardcopy forms
+Online: www.apsit.edu.in (admission notifications)
+
+=== FACILITIES AND INFRASTRUCTURE ===
+
+Campus Features:
+- All classrooms with AC and smart teaching aids
+- 33 air-conditioned computer labs
+- Over 60 labs total
+- Wi-Fi enabled campus
+- Library with 22,600+ technical books and e-books
+- AC seminar hall
+- Hygienic canteen and cafeteria
+- ATM facility
+- Spacious parking
+- Indoor sports facilities
+
+=== INDUSTRY COLLABORATIONS ===
+
+Training Centers:
+- Cisco Networking Academy
+- Oracle Academy (Java, Database, PL/SQL)
+- Autodesk Training Center (3D Modeling, CAD/CAM, BIM)
+- Blue Prism Academy
+- Virtusa Centre of Excellence
+- NVIDIA AI/Deep Learning Lab
+- iOS Lab for mobile development
+
+=== ACHIEVEMENTS AND RANKINGS ===
+
+Awards:
+- Best Engineering College Award (ISTE 2022)
+- Academic Excellence Award (Institution of Engineers India 2023)
+- Times of India Engineering Survey 2022: No.1 Mumbai Region, All India Rank 5
+- Star Performing Engineering Institute (AICTE Virtual Internship Program 2023-24)
+
+=== PLACEMENT INFORMATION ===
+
+Placement Statistics:
+- Median salary package: Rs. 4,28,000
+- High packages: 25 LPA (StreamSets), 20 LPA (Goldman Sachs)
+- Training and Placement Cell provides aptitude and soft skill training
+
+Top Recruiters:
+TCS, Infosys, Deloitte, Virtusa, Capgemini, LTIMindtree, Tech Mahindra, Hexaware, Wipro, Accenture, TTML, Philips
+
+=== ACADEMIC PROGRAMS ===
+
+Value Addition Programs:
+- Free GATE/GRE training
+- Pre-placement training
+- Foreign language courses
+- NPTEL programs from IITs
+- Moodle e-learning platform
+- Project-based learning
+- AICTE Virtual Internship Program
+
+Student Technical Clubs:
+- Coder's Club
+- AIML Club
+- Cyber Security Club
+- DevOps Club
+- Google Developer Student Club
+- Blockchain Club
+- Data Science & Analytics Club
+- Modified Auto Club
+
+=== SPECIAL NOTES ===
+
+- NBA accreditation for Civil, Computer, IT, and Mechanical Engineering
+- World Book of Records acknowledgment for 5 lakh+ internships completed
+- Institution Innovation Council (Ministry of Education initiative)
+- Entrepreneurship Development Cell & Incubation Center
+- Over 1000 computers with high-speed internet
+- Pearson & Tata McGraw-Hill Online Library access

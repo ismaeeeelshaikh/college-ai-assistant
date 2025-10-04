@@ -30,7 +30,28 @@ class RAGService:
         self.session_conversations: Dict[int, Dict[int, List[Dict]]] = {}
         
         self._load_or_create_vectorstore()
+        self._load_conversation_memory()  # NEW: Load saved conversations
         logger.info("✅ RAG Service initialized successfully")
+        
+    def _load_conversation_memory(self):
+        """Load conversation memory from file"""
+        memory_file = "conversation_memory.pkl"
+        if os.path.exists(memory_file):
+            try:
+                with open(memory_file, 'rb') as f:
+                    self.session_conversations = pickle.load(f)
+                logger.info("✅ Loaded conversation memory")
+            except Exception as e:
+                logger.error(f"Failed to load conversation memory: {e}")
+                self.session_conversations = {}
+        
+    def _save_conversation_memory(self):
+        """Save conversation memory to file"""
+        try:
+            with open("conversation_memory.pkl", 'wb') as f:
+                pickle.dump(self.session_conversations, f)
+        except Exception as e:
+            logger.error(f"Failed to save conversation memory: {e}")
         
     def _load_or_create_vectorstore(self):
         vectorstore_path = "vectorstore.pkl"
@@ -79,15 +100,21 @@ Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra."""
             logger.info("✅ Created APSIT data")
             
         try:
-            loader = DirectoryLoader("college_data/", glob="**/*.txt", loader_cls=TextLoader, show_progress=True, loader_kwargs={'encoding': 'utf-8'})
+            loader = DirectoryLoader("college_data/", glob="**/*.txt", loader_cls=TextLoader, show_progress=True,loader_kwargs={'encoding': 'utf-8'})
             documents = loader.load()
             
             if not documents:
                 documents = [Document(page_content=open(sample_file, 'r', encoding='utf-8').read())]
                 
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+            # IMPROVED: Better chunking for better retrieval
+            text_splitter = RecursiveCharacterTextSplitter(
+                chunk_size=800,  # Smaller chunks for better precision
+                chunk_overlap=100,  # Less overlap
+                separators=["\n\n", "\n", ". ", "! ", "? ", " ", ""]
+            )
             texts = text_splitter.split_documents(documents)
             
+            # IMPROVED: Better vector store with more diverse search
             self.vectorstore = FAISS.from_documents(texts, self.embeddings)
             
             with open("vectorstore.pkl", 'wb') as f:
@@ -99,7 +126,7 @@ Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra."""
             raise
             
     def _get_session_context(self, user_id: int, session_id: int, limit: int = 6) -> str:
-        """Get conversation history for specific session"""
+        """Get conversation history for specific session - IMPROVED"""
         if user_id not in self.session_conversations:
             return ""
             
@@ -110,13 +137,16 @@ Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra."""
         if not recent_messages:
             return ""
             
-        context = "Previous conversation in this chat:\n"
+        # Build context string that the AI can use internally
+        context_parts = []
         for msg in recent_messages:
-            context += f"Student: {msg['question']}\nAssistant: {msg['answer']}\n\n"
-        return context.strip()
+            context_parts.append(f"User said: {msg['question']}")
+            context_parts.append(f"I replied: {msg['answer'][:100]}...")  # Truncate long responses
+        
+        return "\n".join(context_parts)
         
     def _store_session_conversation(self, user_id: int, session_id: int, question: str, answer: str):
-        """Store conversation for specific session"""
+        """Store conversation for specific session - IMPROVED with persistence"""
         if user_id not in self.session_conversations:
             self.session_conversations[user_id] = {}
             
@@ -128,39 +158,60 @@ Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra."""
             'answer': answer
         })
         
-        # Keep only last 20 exchanges per session
-        if len(self.session_conversations[user_id][session_id]) > 20:
-            self.session_conversations[user_id][session_id] = self.session_conversations[user_id][session_id][-20:]
+        # Keep only last 15 exchanges per session
+        if len(self.session_conversations[user_id][session_id]) > 15:
+            self.session_conversations[user_id][session_id] = self.session_conversations[user_id][session_id][-15:]
+            
+        # SAVE TO FILE after every conversation
+        self._save_conversation_memory()
             
     def get_response_for_session(self, question: str, user_id: int, session_id: int) -> str:
-        """Get response with session-specific memory"""
+        """Get response with session-specific memory - FIXED VERSION"""
         logger.info(f"Processing question from user {user_id}, session {session_id}: {question}")
         
         try:
-            # Get relevant documents
-            retriever = self.vectorstore.as_retriever(search_kwargs={"k": 4})
+            # IMPROVED: Better retrieval with multiple search strategies
+            retriever = self.vectorstore.as_retriever(
+                search_type="mmr",  # Maximum marginal relevance for diversity
+                search_kwargs={
+                    "k": 6,  # Get more documents
+                    "fetch_k": 20,  # Consider more documents
+                    "lambda_mult": 0.7  # Balance between similarity and diversity
+                }
+            )
             relevant_docs = retriever.get_relevant_documents(question)
             
             college_context = "\n\n".join([doc.page_content for doc in relevant_docs])
             
             # Get session-specific conversation history
-            session_history = self._get_session_context(user_id, session_id)
+            session_context = self._get_session_context(user_id, session_id, limit=4)
             
-            prompt = f"""You are APSIT's helpful college assistant. You maintain conversation context within each chat session.
-{session_history}
+            # IMPROVED: Better prompt that maintains memory but doesn't mention it
+            prompt = f"""You are APSIT's helpful AI assistant. You have perfect memory of this conversation.
+
+CONTEXT FROM THIS CONVERSATION:
+{session_context}
+
 APSIT COLLEGE INFORMATION:
 {college_context}
+
 CURRENT QUESTION: {question}
+
 INSTRUCTIONS:
-- Use conversation context from THIS chat session
-- Remember what the student told you in THIS specific conversation
-- Answer based on APSIT information and this session's history
-- Be helpful and conversational
-- If you don't have specific APSIT information, say so clearly
-ANSWER:"""
+- Remember everything from this conversation (names, previous topics, etc.)
+- Answer the current question directly and naturally
+- Use conversation history to understand context and references
+- If user asks about previous conversation, tell them what you remember
+- If user tells you their name, remember it for future questions and not need to mention user name in every conversation
+- Answer in the same language as the question (Hindi, English, Hinglish)
+- Be conversational and friendly
+- DO NOT say "you previously asked" - just use the context naturally
+
+Answer:"""
+
             response = self.llm.invoke(prompt)
             
-            # Store in session-specific memory
+            # Store in session-specific memory (this will save to file)
             self._store_session_conversation(user_id, session_id, question, response.content)
             
             logger.info(f"✅ Response generated for session {session_id}")
@@ -175,11 +226,13 @@ ANSWER:"""
         if user_id in self.session_conversations:
             if session_id in self.session_conversations[user_id]:
                 del self.session_conversations[user_id][session_id]
+                self._save_conversation_memory()  # Save after clearing
                 
     def clear_all_user_memory(self, user_id: int):
         """Clear all session memories for user"""
         if user_id in self.session_conversations:
             del self.session_conversations[user_id]
+            self._save_conversation_memory()  # Save after clearing
 
 # Global RAG service instance
 rag_service = RAGService()

@@ -13,7 +13,7 @@ const Register = () => {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
 
-  const { register } = useAuth();
+  const { register } = useAuth(); // Note: 'register' is no longer used in handleSubmit
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -25,19 +25,20 @@ const Register = () => {
     if (error) setError('');
   };
 
+  // --- Start of New handleSubmit Function ---
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Prevent multiple submissions
+
     if (loading || success) return;
-    
-    // Validate passwords match
+
+     if (!formData.email || !formData.email.trim()) {
+      setError('Please enter a valid email address.');
+      return;
+    }
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match');
       return;
     }
-
-    // Validate password length
     if (formData.password.length < 6) {
       setError('Password must be at least 6 characters long');
       return;
@@ -45,34 +46,27 @@ const Register = () => {
 
     setLoading(true);
     setError('');
-
     try {
-      console.log('Attempting registration with:', {
+      // Send OTP request
+      const res = await fetch('/api/auth/request-signup-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: formData.email.trim().toLowerCase() }),
+      });
+      if (!res.ok) throw new Error('Failed to send OTP');
+      // Navigate to OTP page with form data except confirmPassword
+      navigate('/verify-signup-otp', { state: {
         username: formData.username,
-        email: formData.email
-      });
-
-      const response = await register({
-        username: formData.username.trim(),
         email: formData.email.trim().toLowerCase(),
-        password: formData.password,
-      });
-
-      console.log('Registration successful:', response);
-      setSuccess(true);
-      
-      // Wait a moment before redirecting
-      setTimeout(() => {
-        navigate('/');
-      }, 1000);
-
+        password: formData.password
+      }});
     } catch (err) {
-      console.error('Registration error:', err);
-      setError(err.response?.data?.detail || 'Registration failed. Please try again.');
+      setError('Could not send OTP. Please try again or use another email.');
     } finally {
       setLoading(false);
     }
   };
+  // --- End of New handleSubmit Function ---
 
   if (success) {
     return (
@@ -184,10 +178,10 @@ const Register = () => {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                   </svg>
-                  Creating account...
+                  Sending OTP...
                 </span>
               ) : (
-                'Create account'
+                'Send OTP'
               )}
             </button>
           </div>

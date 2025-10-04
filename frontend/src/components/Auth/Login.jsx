@@ -100,6 +100,16 @@ const Login = () => {
             </button>
           </div>
 
+          {/* Forgot Password Link */}
+          <div className="text-center">
+            <Link
+              to="/forgot-password"
+              className="text-primary-600 hover:text-primary-500"
+            >
+              Forgot password?
+            </Link>
+          </div>
+
           <div className="text-center">
             <Link
               to="/register"

@@ -5,7 +5,8 @@ from passlib.context import CryptContext
 from ..config import settings
 
 # Use argon2 instead of bcrypt (more secure and no compatibility issues)
-pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
+pwd_context = CryptContext(schemes=["argon2", "bcrypt"], deprecated="auto")
+
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     return pwd_context.verify(plain_password, hashed_password)

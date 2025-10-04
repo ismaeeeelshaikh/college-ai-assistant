@@ -1,0 +1,54 @@
+Welcome to our College AI Assistant. Here's information about our institution:
+
+About the College:
+Our college was established in 1985 and offers various undergraduate and postgraduate programs.
+We have departments for Engineering, Science, Arts, and Commerce.
+The college is affiliated with the State University and is recognized by UGC.
+
+Admission Process:
+Admissions are based on entrance exams and merit lists.
+Application forms are available online from March to June.
+For undergraduate courses, students need to qualify in state entrance exams.
+For postgraduate courses, we conduct our own entrance test.
+
+Facilities:
+- Modern computer labs with latest software
+- Well-equipped library with over 50,000 books
+- Sports complex with indoor and outdoor facilities
+- Hostel facilities for boys and girls separately
+- Cafeteria serving healthy and affordable meals
+- Wi-Fi campus with high-speed internet
+- Medical center with qualified doctors
+- Transportation facility to major city areas
+
+Academic Programs:
+- Bachelor of Engineering (Computer Science, Electronics, Mechanical, Civil)
+- Bachelor of Science (Physics, Chemistry, Mathematics, Biology)
+- Bachelor of Arts (English, History, Political Science, Economics)
+- Bachelor of Commerce (Accounting, Finance, Marketing)
+- Master of Engineering (Various specializations)
+- Master of Science (Various subjects)
+- MBA (Finance, Marketing, HR, Operations)
+
+Fee Structure:
+- Engineering: Rs. 80,000 per year
+- Science: Rs. 40,000 per year
+- Arts: Rs. 30,000 per year
+- Commerce: Rs. 35,000 per year
+- MBA: Rs. 1,20,000 per year
+
+Scholarships:
+Merit-based scholarships available for top performers.
+Financial assistance for economically weaker sections.
+Sports scholarships for outstanding athletes.
+
+Contact Information:
+Phone: +91-9876543210
+Email: info@college.edu
+Address: College Road, City, State - 123456
+Website: www.college.edu
+
+Office Hours:
+Monday to Friday: 9:00 AM to 5:00 PM
+Saturday: 9:00 AM to 1:00 PM
+Sunday: Closed

@@ -1,72 +1,156 @@
-﻿IT Department Teaching Assignments
-Here is a breakdown of the subjects taught by each faculty member of Information Technology Department across different semesters:
+﻿APSIT INFORMATION TECHNOLOGY DEPARTMENT FACULTY AND TEACHING ASSIGNMENTS
+=== FACULTY MEMBERS AND SUBJECTS ===
 
-Prof. Anupama Singh handles the subject ADSAL for Semester 3 and ADSA for Semester 5.
+Prof. Anupama Singh
+Semester 3: ADSAL (Data Structure and Analysis Lab)
+Semester 5: ADSA (Advanced Data Structures and Analysis)
 
-Prof. Apeksha Mohite teaches ADBT and SL for students in Semester 5.
+Prof. Apeksha Mohite
+Semester 5: ADBT (Advance Data Management Technologies), SL (Security Lab)
 
-Prof. Charul Singh is assigned DBMS and AT for Semester 3, and teaches IOE in Semester 7.
+Prof. Charul Singh
+Semester 3: DBMS (Database Management Systems), AT (Automata Theory)
+Semester 7: IOE (Internet of Everything)
 
-Prof. Ganesh Gourshete manages the EVSL lab for Semester 3 and teaches the Institute Level Optional course ILO: CSL in Semester 7.
+Prof. Ganesh Gourshete
+Semester 3: EVSL (Environmental Studies Lab)
+Semester 7: ILO: CSL (Institute Level Optional: Cyber Security and Laws Lab)
 
-Prof. Geetanjali Kalme teaches DBMS and SQL in Semester 3, and SE in Semester 5.
+Prof. Geetanjali Kalme
+Semester 3: DBMS (Database Management Systems), SQL (SQL Lab)
+Semester 5: SE (Software Engineering)
 
-Prof. Harsha Zope is responsible for teaching IRS to Semester 7 students.
+Prof. Harsha Zope
+Semester 7: IRS (Information Retrieval System)
 
-Prof. Jayshree Jha's teaching load includes SE for Semester 5 and both IRS and ROSPL for Semester 7.
+Prof. Jayshree Jha
+Semester 5: SE (Software Engineering)
+Semester 7: IRS (Information Retrieval System), ROSPL (Research Operations and Statistical Programming Lab)
 
-Prof. Jisha K. R. teaches PCE-II to Semester 5 students.
+Prof. Jisha K. R.
+Semester 5: PCE-II (Professional Communication and Ethics-II)
 
-Dr. Kiran Deshpande handles AT for Semester 3 and SL for Semester 5.
+Dr. Kiran Deshpande (HOD - Information Technology Department)
+Semester 3: AT (Automata Theory)
+Semester 5: SL (Security Lab)
 
-Prof. Mandar Ganjapurkar teaches FSJP and its lab FSJPL in Semester 3, IP in Semester 5, and SAD in Semester 7.
+Prof. Mandar Ganjapurkar
+Semester 3: FSJP (Full Stack Java Programming), FSJPL (Full Stack Java Programming Lab)
+Semester 5: IP (Internet Programming)
+Semester 7: SAD (System Analysis and Design)
 
-Prof. Manjusha Kashilkar manages EVSL for Semester 3 and teaches CNS and ADL in Semester 5.
+Prof. Manjusha Kashilkar
+Semester 3: EVSL (Environmental Studies Lab)
+Semester 5: CNS (Computer Network Security), ADL (Advanced Database Lab)
 
-Prof. Nirmala Vernekar teaches AMT-I for Semester 3.
+Prof. Nirmala Vernekar
+Semester 3: AMT-I (Applied Mathematics-I)
 
-Prof. Rucha Kulkarni is assigned FSJP, FSJPL, and EVSL in Semester 3, and CNS in Semester 5.
+Prof. Rucha Kulkarni
+Semester 3: FSJP (Full Stack Java Programming), FSJPL (Full Stack Java Programming Lab), EVSL (Environmental Studies Lab)
+Semester 5: CNS (Computer Network Security)
 
-Prof. Randeep Kahlon's subjects include SQL for Semester 3, EEB for Semester 5, and IS for Semester 7.
+Prof. Randeep Kahlon
+Semester 3: SQL (SQL Lab)
+Semester 5: EEB (Emerging Engineering Branches)
+Semester 7: IS (Infrastructure Security)
 
-Prof. Roshna Sangale teaches IP and its lab IPL for Semester 5.
+Prof. Roshna Sangale
+Semester 5: IP (Internet Programming), IPL (Internet Programming Lab)
 
-Dr. Sonia Aneesh handles ADSA and AT for Semester 3, and continues with ADSA for Semester 5.
+Dr. Sonia Aneesh (AWS Certified Solutions Architect, Cisco Certified Network Associate)
+Semester 3: ADSA (Advanced Data Structures and Analysis), AT (Automata Theory)
+Semester 5: ADSA (Advanced Data Structures and Analysis)
 
-Prof. Sonal Balpande teaches ADSA in Semester 3 and is responsible for AI-DS-II and its lab DSL in Semester 7.
+Prof. Sonal Balpande (AWS Certified Solutions Architect)
+Semester 3: ADSA (Advanced Data Structures and Analysis)
+Semester 7: AI-DS-II (Artificial Intelligence and Data Science-II), DSL (Data Science Lab)
 
-Prof. Sneha Dalvi is assigned ADSA and its lab ADSAL for Semester 3.
+Prof. Sneha Dalvi (AWS Solutions Architect Certified, Certified Ethical Hacker)
+Semester 3: ADSA (Advanced Data Structures and Analysis), ADSAL (Data Structure and Analysis Lab)
 
-Prof. Selvin Furtado teaches IOE to Semester 7 students.
+Prof. Selvin Furtado
+Semester 7: IOE (Internet of Everything)
 
-Prof. Surbhi Gour teaches PCE-II for Semester 5.
+Prof. Surbhi Gour
+Semester 5: PCE-II (Professional Communication and Ethics-II)
 
-Prof. Sonal Jain is responsible for ADL and DL in Semester 5, and IOE in Semester 7.
+Prof. Sonal Jain (Red Hat Certified System Administrator)
+Semester 5: ADL (Advanced Database Lab), DL (Deep Learning)
+Semester 7: IOE (Internet of Everything)
 
-Prof. Sachin Kasare handles EVS in Semester 3 and teaches MIS and ROSPL in Semester 7.
+Prof. Sachin Kasare
+Semester 3: EVS (Environmental Studies)
+Semester 7: MIS (Management Information System), ROSPL (Research Operations and Statistical Programming Lab)
 
-Prof. Saylee Lapalikar teaches EEB and SL for Semester 5, and IOE for Semester 7.
+Prof. Saylee Lapalikar
+Semester 5: EEB (Emerging Engineering Branches), SL (Security Lab)
+Semester 7: IOE (Internet of Everything)
 
-Prof. Shweta Mahajan manages the EDL lab for Semester 3 and teaches IOE in Semester 7.
+Prof. Shweta Mahajan
+Semester 3: EDL (Engineering Drawing Lab)
+Semester 7: IOE (Internet of Everything)
 
-Prof. Seema Jadhav is assigned EVS in Semester 3, DL in Semester 5, and STQA in Semester 7.
+Prof. Seema Jadhav
+Semester 3: EVS (Environmental Studies)
+Semester 5: DL (Deep Learning)
+Semester 7: STQA (Software Testing and Quality Assurance)
 
-Dr. Sameer Nanivadekar teaches ED and its lab EDL in Semester 3, and EEB in Semester 5.
+Dr. Sameer Nanivadekar (Dean Administration)
+Semester 3: ED (Engineering Drawing), EDL (Engineering Drawing Lab)
+Semester 5: EEB (Emerging Engineering Branches)
 
-Prof. Sujata Oak handles SE and DL for Semester 5, and IRS for Semester 7.
+Prof. Sujata Oak
+Semester 5: SE (Software Engineering), DL (Deep Learning)
+Semester 7: IRS (Information Retrieval System)
 
-Prof. Snehal Mali teaches SQL and EVSL in Semester 3, and IS in Semester 7.
+Prof. Snehal Mali
+Semester 3: SQL (SQL Lab), EVSL (Environmental Studies Lab)
+Semester 7: IS (Infrastructure Security)
 
-Prof. Shafaque Syed is assigned EVSL for Semester 3, and both AI-DS-II and its lab DSL for Semester 7.
+Prof. Shafaque Syed
+Semester 3: EVSL (Environmental Studies Lab)
+Semester 7: AI-DS-II (Artificial Intelligence and Data Science-II), DSL (Data Science Lab)
 
-Prof. Shradha Birje handles EVSL in Semester 3, and AI-DS-II with its lab DSL in Semester 7.
+Prof. Shradha Birje
+Semester 3: EVSL (Environmental Studies Lab)
+Semester 7: AI-DS-II (Artificial Intelligence and Data Science-II), DSL (Data Science Lab)
 
-Prof. Sushruti Kachare teaches AMT-I to Semester 3 students.
+Prof. Sushruti Kachare
+Semester 3: AMT-I (Applied Mathematics-I)
 
-Prof. Shital Agrawal is responsible for DBMS and EDL in Semester 3, as well as IP and its lab IPL in Semester 5.
+Prof. Shital Agrawal
+Semester 3: DBMS (Database Management Systems), EDL (Engineering Drawing Lab)
+Semester 5: IP (Internet Programming), IPL (Internet Programming Lab)
 
-Prof. Urjashree Patil teaches ED in Semester 3 and SAD in Semester 7.
+Prof. Urjashree Patil
+Semester 3: ED (Engineering Drawing)
+Semester 7: SAD (System Analysis and Design)
 
-Prof. Vishal Badgujar manages EVSL for Semester 3 and teaches CNS, SL, and ADL in Semester 5.
+Prof. Vishal Badgujar (Red Hat Certified System Administrator, Oracle Cloud Infrastructure Certified Associate, Microsoft Certified Azure Fundamentals)
+Semester 3: EVSL (Environmental Studies Lab)
+Semester 5: CNS (Computer Network Security), SL (Security Lab), ADL (Advanced Database Lab)
 
-Prof. Vaibhav Yavalkar teaches FSJP and its lab FSJPL in Semester 3, and ILO: CSL in Semester 7.
+Prof. Vaibhav Yavalkar
+Semester 3: FSJP (Full Stack Java Programming), FSJPL (Full Stack Java Programming Lab)
+Semester 7: ILO: CSL (Institute Level Optional: Cyber Security and Laws Lab)
+
+=== DEPARTMENT LEADERSHIP ===
+Head of Department: Dr. Kiran Deshpande
+Contact: 8369862997
+
+=== NOTABLE FACULTY CERTIFICATIONS ===
+
+AWS Solutions Architect: Prof. Sonia Aneesh, Prof. Sonal Balpande, Prof. Sneha Dalvi
+
+Cisco Certified Network Associate: Prof. Sonia Aneesh
+
+Red Hat Certified System Administrator: Prof. Sonal Jain, Prof. Vishal Badgujar
+
+Certified Ethical Hacker: Prof. Sneha Dalvi
+
+Oracle Cloud Infrastructure Certified: Prof. Vishal Badgujar
+
+Microsoft Azure Fundamentals: Prof. Vishal Badgujar
+
+Juniper Certified Network Associate: Prof. Jayshree Jha

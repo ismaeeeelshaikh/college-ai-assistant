@@ -1,4 +1,4 @@
-﻿Welcome to our College AI Assistant. Here's information about our institution:
+Welcome to our College AI Assistant. Here's information about our institution:
 
 About the College:
 Our college was established in 1985 and offers various undergraduate and postgraduate programs.

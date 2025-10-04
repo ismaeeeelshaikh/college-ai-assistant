@@ -1,4 +1,4 @@
-﻿question: What are the eligibility criteria for all undergraduate courses?
+question: What are the eligibility criteria for all undergraduate courses?
 answer: To be eligible for undergraduate courses, a candidate must have passed the 10+2 examination or its equivalent with a minimum aggregate percentage of 50%. Specific subject requirements may apply for certain courses, such as Science or Commerce.
 question: What are the eligibility criteria for all postgraduate courses?
 answer: Candidates for postgraduate programs must hold a bachelor's degree in a relevant field from a recognized university with a minimum aggregate of 55%. Some courses may require a specific entrance exam score.

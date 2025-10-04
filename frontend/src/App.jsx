@@ -6,6 +6,7 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import ForgotPassword from "./components/Auth/ForgotPassword";
 import ResetPassword from "./components/Auth/ResetPassword";
+import VerifySignupOtp from "./components/Auth/VerifySignupOtp";
 
 
 const PrivateRoute = ({ children }) => {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/register" element={<Register />} />
              <Route path="/forgot-password" element={<ForgotPassword />} />
              <Route path="/reset-password" element={<ResetPassword />} />
+             <Route path="/verify-signup-otp" element={<VerifySignupOtp />} />
 
             <Route
               path="/"

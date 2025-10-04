@@ -23,3 +23,6 @@ class Token(BaseModel):
 class UserLogin(BaseModel):
     email: EmailStr
     password: str
+
+class EmailSchema(BaseModel):
+    email: EmailStr

@@ -1,4 +1,4 @@
-﻿IT Department Teaching Assignments
+IT Department Teaching Assignments
 Here is a breakdown of the subjects taught by each faculty member of Information Technology Department across different semesters:
 * Prof. Anupama Singh handles the subject ADSAL for Semester 3 and ADSA for Semester 5.
 * Prof. Apeksha Mohite teaches ADBT and SL for students in Semester 5.

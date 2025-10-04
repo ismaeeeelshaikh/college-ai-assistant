@@ -79,7 +79,7 @@ Address: Mumbai-Pune Highway, Thane West, Thane - 400615, Maharashtra."""
             logger.info("✅ Created APSIT data")
             
         try:
-            loader = DirectoryLoader("college_data/", glob="**/*.txt", loader_cls=TextLoader, show_progress=True)
+            loader = DirectoryLoader("college_data/", glob="**/*.txt", loader_cls=TextLoader, show_progress=True, loader_kwargs={'encoding': 'utf-8'})
             documents = loader.load()
             
             if not documents:

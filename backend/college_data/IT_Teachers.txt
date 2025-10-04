@@ -1,37 +1,72 @@
 ﻿IT Department Teaching Assignments
 Here is a breakdown of the subjects taught by each faculty member of Information Technology Department across different semesters:
-* Prof. Anupama Singh handles the subject ADSAL for Semester 3 and ADSA for Semester 5.
-* Prof. Apeksha Mohite teaches ADBT and SL for students in Semester 5.
-* Prof. Charul Singh is assigned DBMS and AT for Semester 3, and teaches IOE in Semester 7.
-* Prof. Ganesh Gourshete manages the EVSL lab for Semester 3 and teaches the Institute Level Optional course ILO: CSL in Semester 7.
-* Prof. Geetanjali Kalme teaches DBMS and SQL in Semester 3, and SE in Semester 5.
-* Prof. Harsha Zope is responsible for teaching IRS to Semester 7 students.
-* Prof. Jayshree Jha's teaching load includes SE for Semester 5 and both IRS and ROSPL for Semester 7.
-* Prof. Jisha K. R. teaches PCE-II to Semester 5 students.
-* Dr. Kiran Deshpande handles AT for Semester 3 and SL for Semester 5.
-* Prof. Mandar Ganjapurkar teaches FSJP and its lab FSJPL in Semester 3, IP in Semester 5, and SAD in Semester 7.
-* Prof. Manjusha Kashilkar manages EVSL for Semester 3 and teaches CNS and ADL in Semester 5.
-* Prof. Nirmala Vernekar teaches AMT-I for Semester 3.
-* Prof. Rucha Kulkarni is assigned FSJP, FSJPL, and EVSL in Semester 3, and CNS in Semester 5.
-* Prof. Randeep Kahlon's subjects include SQL for Semester 3, EEB for Semester 5, and IS for Semester 7.
-* Prof. Roshna Sangale teaches IP and its lab IPL for Semester 5.
-* Dr. Sonia Aneesh handles ADSA and AT for Semester 3, and continues with ADSA for Semester 5.
-* Prof. Sonal Balpande teaches ADSA in Semester 3 and is responsible for AI-DS-II and its lab DSL in Semester 7.
-* Prof. Sneha Dalvi is assigned ADSA and its lab ADSAL for Semester 3.
-* Prof. Selvin Furtado teaches IOE to Semester 7 students.
-* Prof. Surbhi Gour teaches PCE-II for Semester 5.
-* Prof. Sonal Jain is responsible for ADL and DL in Semester 5, and IOE in Semester 7.
-* Prof. Sachin Kasare handles EVS in Semester 3 and teaches MIS and ROSPL in Semester 7.
-* Prof. Saylee Lapalikar teaches EEB and SL for Semester 5, and IOE for Semester 7.
-* Prof. Shweta Mahajan manages the EDL lab for Semester 3 and teaches IOE in Semester 7.
-* Prof. Seema Jadhav is assigned EVS in Semester 3, DL in Semester 5, and STQA in Semester 7.
-* Dr. Sameer Nanivadekar teaches ED and its lab EDL in Semester 3, and EEB in Semester 5.
-* Prof. Sujata Oak handles SE and DL for Semester 5, and IRS for Semester 7.
-* Prof. Snehal Mali teaches SQL and EVSL in Semester 3, and IS in Semester 7.
-* Prof. Shafaque Syed is assigned EVSL for Semester 3, and both AI-DS-II and its lab DSL for Semester 7.
-* Prof. Shradha Birje handles EVSL in Semester 3, and AI-DS-II with its lab DSL in Semester 7.
-* Prof. Sushruti Kachare teaches AMT-I to Semester 3 students.
-* Prof. Shital Agrawal is responsible for DBMS and EDL in Semester 3, as well as IP and its lab IPL in Semester 5.
-* Prof. Urjashree Patil teaches ED in Semester 3 and SAD in Semester 7.
-* Prof. Vishal Badgujar manages EVSL for Semester 3 and teaches CNS, SL, and ADL in Semester 5.
-* Prof. Vaibhav Yavalkar teaches FSJP and its lab FSJPL in Semester 3, and ILO: CSL in Semester 7.
+
+Prof. Anupama Singh handles the subject ADSAL for Semester 3 and ADSA for Semester 5.
+
+Prof. Apeksha Mohite teaches ADBT and SL for students in Semester 5.
+
+Prof. Charul Singh is assigned DBMS and AT for Semester 3, and teaches IOE in Semester 7.
+
+Prof. Ganesh Gourshete manages the EVSL lab for Semester 3 and teaches the Institute Level Optional course ILO: CSL in Semester 7.
+
+Prof. Geetanjali Kalme teaches DBMS and SQL in Semester 3, and SE in Semester 5.
+
+Prof. Harsha Zope is responsible for teaching IRS to Semester 7 students.
+
+Prof. Jayshree Jha's teaching load includes SE for Semester 5 and both IRS and ROSPL for Semester 7.
+
+Prof. Jisha K. R. teaches PCE-II to Semester 5 students.
+
+Dr. Kiran Deshpande handles AT for Semester 3 and SL for Semester 5.
+
+Prof. Mandar Ganjapurkar teaches FSJP and its lab FSJPL in Semester 3, IP in Semester 5, and SAD in Semester 7.
+
+Prof. Manjusha Kashilkar manages EVSL for Semester 3 and teaches CNS and ADL in Semester 5.
+
+Prof. Nirmala Vernekar teaches AMT-I for Semester 3.
+
+Prof. Rucha Kulkarni is assigned FSJP, FSJPL, and EVSL in Semester 3, and CNS in Semester 5.
+
+Prof. Randeep Kahlon's subjects include SQL for Semester 3, EEB for Semester 5, and IS for Semester 7.
+
+Prof. Roshna Sangale teaches IP and its lab IPL for Semester 5.
+
+Dr. Sonia Aneesh handles ADSA and AT for Semester 3, and continues with ADSA for Semester 5.
+
+Prof. Sonal Balpande teaches ADSA in Semester 3 and is responsible for AI-DS-II and its lab DSL in Semester 7.
+
+Prof. Sneha Dalvi is assigned ADSA and its lab ADSAL for Semester 3.
+
+Prof. Selvin Furtado teaches IOE to Semester 7 students.
+
+Prof. Surbhi Gour teaches PCE-II for Semester 5.
+
+Prof. Sonal Jain is responsible for ADL and DL in Semester 5, and IOE in Semester 7.
+
+Prof. Sachin Kasare handles EVS in Semester 3 and teaches MIS and ROSPL in Semester 7.
+
+Prof. Saylee Lapalikar teaches EEB and SL for Semester 5, and IOE for Semester 7.
+
+Prof. Shweta Mahajan manages the EDL lab for Semester 3 and teaches IOE in Semester 7.
+
+Prof. Seema Jadhav is assigned EVS in Semester 3, DL in Semester 5, and STQA in Semester 7.
+
+Dr. Sameer Nanivadekar teaches ED and its lab EDL in Semester 3, and EEB in Semester 5.
+
+Prof. Sujata Oak handles SE and DL for Semester 5, and IRS for Semester 7.
+
+Prof. Snehal Mali teaches SQL and EVSL in Semester 3, and IS in Semester 7.
+
+Prof. Shafaque Syed is assigned EVSL for Semester 3, and both AI-DS-II and its lab DSL for Semester 7.
+
+Prof. Shradha Birje handles EVSL in Semester 3, and AI-DS-II with its lab DSL in Semester 7.
+
+Prof. Sushruti Kachare teaches AMT-I to Semester 3 students.
+
+Prof. Shital Agrawal is responsible for DBMS and EDL in Semester 3, as well as IP and its lab IPL in Semester 5.
+
+Prof. Urjashree Patil teaches ED in Semester 3 and SAD in Semester 7.
+
+Prof. Vishal Badgujar manages EVSL for Semester 3 and teaches CNS, SL, and ADL in Semester 5.
+
+Prof. Vaibhav Yavalkar teaches FSJP and its lab FSJPL in Semester 3, and ILO: CSL in Semester 7.

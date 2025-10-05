@@ -22,45 +22,46 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="max-w-md w-full space-y-8">
+    <div className="min-h-screen flex items-center justify-center bg-background-dark">
+      <div className="max-w-md w-full bg-background-card rounded-lg shadow-lg p-8 space-y-6">
         <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          <h2 className="text-center text-3xl font-extrabold text-accent">
             Forgot Password
           </h2>
         </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="email" className="sr-only">
+            <label htmlFor="email" className="block mb-1 text-gray-400 font-medium">
               Email address
             </label>
             <input
               id="email"
               type="email"
               required
-              className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+              className="w-full px-3 py-2 rounded-md bg-background-dark border border-gray-700 placeholder-gray-400 text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600 transition"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              autoComplete="email"
             />
           </div>
           {message && (
-            <div className="text-green-600 text-sm text-center">{message}</div>
+            <div className="text-green-500 bg-green-900 rounded-md p-2 text-center text-sm">{message}</div>
           )}
           {error && (
-            <div className="text-red-600 text-sm text-center">{error}</div>
+            <div className="text-red-600 bg-red-900 rounded-md p-2 text-center text-sm">{error}</div>
           )}
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+              className="w-full py-2 px-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary-500 disabled:opacity-50 disabled:pointer-events-none transition"
             >
               Send OTP
             </button>
           </div>
           <div className="text-center">
             <span
-              className="text-primary-600 hover:text-primary-500 cursor-pointer"
+              className="text-primary-600 hover:text-primary-500 cursor-pointer font-medium underline"
               onClick={() => navigate("/login")}
             >
               Back to login

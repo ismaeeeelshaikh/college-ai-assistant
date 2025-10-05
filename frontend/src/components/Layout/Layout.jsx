@@ -12,11 +12,15 @@ const Layout = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-background-dark text-gray-100 transition-colors duration-300">
       <Header />
       <div className="flex-1 flex overflow-hidden">
+        {/* Sidebar inherits dark/card color from index.css */}
         <Sidebar onNewChat={handleNewChat} />
-        <ChatInterface onNewChat={handleNewChat} />
+        {/* Main chat area - ensures pure dark bg */}
+        <div className="flex-1 bg-background-dark min-h-0">
+          <ChatInterface onNewChat={handleNewChat} />
+        </div>
       </div>
     </div>
   );

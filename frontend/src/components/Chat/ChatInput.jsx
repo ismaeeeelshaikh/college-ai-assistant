@@ -187,107 +187,93 @@ const ChatInput = ({ onSendMessage, disabled }) => {
     }
   };
 
-  return (
-    <div className="border-t border-gray-200 bg-white">
+   return (
+    <div className="border-t border-background-dark bg-background-card px-4 py-3">
       {/* Error message */}
       {error && (
-        <div className="px-4 py-2 bg-red-50 border-b border-red-200">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 text-red-700">
-              <AlertCircle className="h-4 w-4" />
-              <span className="text-sm">{error}</span>
-            </div>
-            {error.includes('permission') && (
-              <button
-                onClick={requestMicrophonePermission}
-                className="text-sm bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700"
-              >
-                Allow Microphone
-              </button>
-            )}
+        <div className="px-4 py-2 bg-red-900 border-b border-red-700 rounded text-red-300 flex items-center justify-between mb-2">
+          <div className="flex items-center space-x-2">
+            <AlertCircle className="h-4 w-4" />
+            <span className="text-sm">{error}</span>
           </div>
+          {error.includes('permission') && (
+            <button
+              onClick={requestMicrophonePermission}
+              className="text-sm bg-red-600 hover:bg-red-700 px-3 py-1 rounded"
+            >
+              Allow Microphone
+            </button>
+          )}
         </div>
       )}
 
       {/* Recording indicator */}
       {isRecording && (
-        <div className="px-4 py-2 bg-gradient-to-r from-green-50 to-blue-50 border-b border-green-200">
-          <div className="flex items-center justify-center space-x-2">
-            <div className="flex items-center space-x-3 text-green-700">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium">
-                🎤 Listening... Speak whatever you want to ask about APSIT
-              </span>
-              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-            </div>
+        <div className="px-4 py-2 bg-gradient-to-r from-green-900 to-primary-700 border-b border-green-700 rounded mb-2">
+          <div className="flex items-center justify-center space-x-2 text-green-300">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium">
+              🎤 Listening... Speak in Hindi, Hinglish, Marathi, or English
+            </span>
+            <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
           </div>
         </div>
       )}
 
       {/* Input form */}
-      <form onSubmit={handleSubmit} className="p-4">
-        <div className="flex items-center space-x-2">
-          <input
-            type="text"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder={
-              isRecording 
-                ? "🎤 Listening for your voice..." 
-                : "Ask APSIT's AI Assistant"
-            }
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100"
-            disabled={disabled}
-          />
-          {/* REMOVED: Multi-language indicator - No more IN symbol */}
-          {/* Microphone button */}
-          <button
-            type="button"
-            onClick={toggleRecording}
-            disabled={disabled}
-            className={`px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 ${
-              isRecording
-                ? 'bg-red-600 hover:bg-red-700 focus:ring-red-500 text-white animate-pulse'
-                : !permissionGranted
-                ? 'bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-500 text-white'
-                : 'bg-gray-100 hover:bg-gray-200 focus:ring-gray-500 text-gray-600'
-            } disabled:opacity-50 disabled:cursor-not-allowed`}
-            title={
-              !permissionGranted 
-                ? 'Click to allow microphone access'
-                : isRecording 
-                ? 'Stop recording'
-                : 'Start voice input (Multi-language)'
-            }
-          >
-            {isRecording ? (
-              <MicOff className="h-4 w-4" />
-            ) : (
-              <Mic className="h-4 w-4" />
-            )}
-          </button>
-          {/* Send button */}
-          <button
-            type="submit"
-            disabled={disabled || !message.trim()}
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-          >
-            <Send className="h-4 w-4" />
-          </button>
-        </div>
-        {/* Help text */}
-        <div className="mt-2 text-xs text-gray-500 text-center">
-          {!isSupported ? (
-            "Speech recognition not supported - Please use Chrome, Edge, or Safari"
-          ) : !permissionGranted ? (
-            "🔒 Click microphone to allow voice input"
-          ) : isRecording ? (
-            "🎤 Recording active - Speak in Hindi, Hinglish, Marathi ya English"
-          ) : (
-            "Smart Campus Connect is here, Ask about A. P Shah Institute of Technology"
-          )}
-        </div>
+      <form onSubmit={handleSubmit} className="flex items-center space-x-2">
+        <input
+          type="text"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder={
+            isRecording
+              ? '🎤 Listening for your voice...'
+              : "Ask APSIT's AI Assistant"
+          }
+          className="flex-1 px-4 py-2 rounded-lg border border-background-dark bg-background-dark text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-900"
+          disabled={disabled}
+        />
+        <button
+          type="button"
+          onClick={toggleRecording}
+          disabled={disabled}
+          className={`px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 ${
+            isRecording
+              ? 'bg-red-700 hover:bg-red-800 focus:ring-red-600 text-white animate-pulse'
+              : !permissionGranted
+              ? 'bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-600 text-white'
+              : 'bg-gray-800 hover:bg-gray-700 focus:ring-gray-700 text-gray-300'
+          } disabled:opacity-50 disabled:cursor-not-allowed`}
+          title={
+            !permissionGranted
+              ? 'Click to allow microphone access'
+              : isRecording
+              ? 'Stop recording'
+              : 'Start voice input (Multi-language)'
+          }
+        >
+          {isRecording ? <MicOff className="h-4 w-4" /> : <Mic className="h-4 w-4" />}
+        </button>
+        <button
+          type="submit"
+          disabled={disabled || !message.trim()}
+          className="px-4 py-2 bg-primary-500 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-lg transition-colors"
+        >
+          <Send className="h-4 w-4" />
+        </button>
       </form>
+
+      {/* Help text */}
+      <div className="mt-2 text-xs text-gray-400 text-center">
+        {!isSupported
+          ? 'Speech recognition not supported - Please use Chrome, Edge, or Safari'
+          : !permissionGranted
+          ? '🔒 Click microphone to allow voice input'
+          : isRecording
+          ? '🎤 Recording active - Speak in Hindi, Hinglish, Marathi ya English'
+          : 'Smart Campus Connect is here, Ask about A. P Shah Institute of Technology'}
+      </div>
     </div>
   );
 };

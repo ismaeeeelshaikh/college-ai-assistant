@@ -49,13 +49,13 @@ const VerifySignupOtp = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow">
-        <h2 className="text-2xl font-bold text-center mb-6">
+    <div className="min-h-screen flex items-center justify-center bg-background-dark px-4">
+      <div className="max-w-md w-full bg-background-card p-8 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold text-center text-accent mb-6">
           Verify Signup OTP
         </h2>
-        <p className="text-center mb-4 text-gray-700">
-          Please enter the OTP sent to <strong>{email}</strong>
+        <p className="text-center mb-4 text-gray-400">
+          Please enter the OTP sent to <strong className="text-white">{email}</strong>
         </p>
         <input
           type="text"
@@ -64,19 +64,19 @@ const VerifySignupOtp = () => {
           value={otp}
           onChange={(e) => setOtp(e.target.value)}
           disabled={loading}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-primary-500 outline-none"
+          className="w-full px-4 py-2 rounded-md bg-background-dark border border-gray-700 placeholder-gray-500 text-gray-200 mb-4 focus:outline-none focus:ring-2 focus:ring-primary-600 transition"
         />
         {error && (
-          <p className="text-red-600 text-sm mb-4 text-center">{error}</p>
+          <p className="text-red-600 text-sm mb-4 text-center bg-red-900 rounded-md p-2">{error}</p>
         )}
         <button
           onClick={handleVerify}
           disabled={loading}
-          className="w-full py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 disabled:opacity-50"
+          className="w-full py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-md disabled:opacity-50 transition"
         >
           {loading ? 'Verifying...' : 'Verify & Create Account'}
         </button>
-        <p className="mt-4 text-center text-sm text-gray-600">
+        <p className="mt-4 text-center text-sm text-gray-500">
           Didn't receive OTP? Please check your spam or{' '}
           <Link to="/register" className="text-primary-600 hover:underline">
             go back and try again

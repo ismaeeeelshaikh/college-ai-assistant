@@ -56,7 +56,7 @@ Prof. Shweta Mahajan teaches Semester 3: EDL (Engineering Drawing Lab) and Semes
 
 Prof. Seema Jadhav teaches Semester 3: EVS (Environmental Studies), Semester 5: DL (Deep Learning), and Semester 7: STQA (Software Testing and Quality Assurance).
 
-Dr. Sameer Nanivadekar (Dean Administration) teaches Semester 3: ED (Engineering Drawing), EDL (Engineering Drawing Lab) and Semester 5: EEB (Emerging Engineering Branches).
+Dr. Sameer Nanivadekar (Dean Administration) teaches Semester 3: ED (Engineering Drawing), EDL (Engineering Drawing Lab) and Semester 5: EEB (Entreprenuership and E-business).
 
 Prof. Sujata Oak teaches Semester 5: SE (Software Engineering), DL (Deep Learning) and Semester 7: IRS (Information Retrieval System).
 

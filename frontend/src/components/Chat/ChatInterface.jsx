@@ -48,11 +48,11 @@ const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
                 <button
-                  onClick={() => onSendMessage('What IT courses does APSIT offer?')}
+                  onClick={() => onSendMessage('Which documents reqiured for admission?')}
                   className="p-4 bg-background-card border border-background-dark rounded-lg hover:bg-primary-600 hover:text-white text-left transition-colors"
                 >
-                  <div className="font-medium text-accent">IT Courses</div>
-                  <div className="text-sm text-gray-400">What IT courses does APSIT offer?</div>
+                  <div className="font-medium text-accent">Documents Needed</div>
+                  <div className="text-sm text-gray-400">Which documents reqiured for admission?</div>
                 </button>
                 <button
                   onClick={() => onSendMessage('How do I apply for admission to APSIT?')}
@@ -69,11 +69,11 @@ const ChatInterface = ({ messages, onSendMessage, loading, error, currentSession
                   <div className="text-sm text-gray-400">What facilities are available?</div>
                 </button>
                 <button
-                  onClick={() => onSendMessage('What is the fee structure at APSIT?')}
+                  onClick={() => onSendMessage('What is the fee structure for Student?')}
                   className="p-4 bg-background-card border border-background-dark rounded-lg hover:bg-primary-600 hover:text-white text-left transition-colors"
                 >
                   <div className="font-medium text-accent">Fees</div>
-                  <div className="text-sm text-gray-400">What is the fee structure?</div>
+                  <div className="text-sm text-gray-400">What is the fee structure for Student?</div>
                 </button>
               </div>
             </div>

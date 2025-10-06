@@ -114,7 +114,7 @@ Industry Collaborations & Training: The institute has established several traini
 
 Value Addition Programs: APSIT offers several free programs for student development, including GATE/GRE training, foreign language courses (Japanese, German, etc.), NPTEL courses from IITs, and project-based learning. The institute also has an e-learning platform (Moodle).
 
-Student Clubs: There are numerous technical clubs for students, such as the Coder's Club, AIML Club, Cyber Security Club, Google Developer Student Club (GDSC), Blockchain Club, and the Modified Auto Club.
+Student Clubs: There are numerous technical clubs for students, such as the Coder's Club, AIML Club, Cyber Security Club, Google Developer Student Club (GDSC), Blockchain Club, Devops Club, and the Modified Auto Club.
 
 === ACHIEVEMENTS AND RECOGNITION ===
 

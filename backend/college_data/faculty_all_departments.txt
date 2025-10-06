@@ -178,3 +178,14 @@ Other faculty in this department include:
 === FACULTY OVERVIEW ===
 
 APSIT has over 125 faculty members across 7 departments, including more than 35 with a PhD and over 40 currently pursuing a PhD. For more specific queries, contact the respective department head.
+
+===  THESE ARE ALL 7 DEPARTMENTS  ===
+
+7 Departments are,
+- HUMANITIES AND APPLIED SCIENCES DEPARTMENT
+- INFORMATION TECHNOLOGY (IT) DEPARTMENT
+- COMPUTER ENGINEERING DEPARTMENT
+- CIVIL ENGINEERING DEPARTMENT
+- MECHANICAL ENGINEERING DEPARTMENT
+- CSE (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING) DEPARTMENT
+- CSE (DATA SCIENCE) DEPARTMENT

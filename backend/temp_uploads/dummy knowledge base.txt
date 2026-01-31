@@ -1,0 +1,20 @@
+CONFIDENTIAL INTERNAL DOCUMENT
+A. P. Shah Institute of Technology - Student Records 2026
+
+1. Student Profile:
+   Name: Deep Varkute
+   Department: Information Technology
+   Contact: +91-9876543210
+   Email: deep.varkute@example.com
+   GPA: 9.2
+
+2. Project Details:
+   Project Name: "VaultRAG Security"
+   Team Lead: Ismaeel Shaikh
+   Budget: ₹50,000 allocated for Cloud Servers.
+   Secret Key: SUPER_SECRET_KEY_123
+
+3. Incident Report:
+   Date: 12th Jan 2026
+   Description: A minor data leak was detected in the library system.
+   Resolved By: Staff Member Priya Sharma (ID: EMP-456).s
